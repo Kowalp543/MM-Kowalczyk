@@ -1,32 +1,22 @@
 <template>
-  <div class = "app">
-    <Header/>
-    <Banner/>
-    <About/>
-    <Specialty/>
-    <Footer/>
+  <div id="app">
+    <router-view />
+    <router-view name="banner" />
+    <router-view name="about" />
+    <router-view name="specialty" />
+    <router-view name="footer" />
+    <router-view name="informationO"/>
+    <router-view name="informationD"/>
+    <router-view name="footer2"/>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
-import Banner from '@/components/Banner.vue';
-import About from '@/components/About.vue';
-import Specialty from '@/components/Specialty.vue';
-import Footer from '@/components/Footer.vue';
+
 
 export default
 {
   name: 'App',
-  components:
-  {
-    Header,
-    Banner,
-    About,
-    Specialty,
-    Footer,
-  }
-
 }
 
 

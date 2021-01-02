@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="page-footer-border"></div>
-            <div class="page-footer-2">
+            <div class="page-footer-1">
                 <div class="page-footer-logo">
                     <img class="logo-footer" src="~@/assets/logo_stopka.png/">
                 </div>

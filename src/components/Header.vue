@@ -11,10 +11,10 @@
 
                 <nav class="page-nav">
                     <ul class ="page-nav-list">
-                        <li><a href="">STRONA GŁÓWNA</a></li>
-                        <li><a href="">OKULISTA</a></li>
-                        <li><a href="">DIABETOLOG</a></li>
-                        <li><a href="">KONTAKT</a></li>
+                        <li><router-link to="/">STRONA GŁÓWNA</router-link></li>
+                        <li><router-link to="okulista">OKULISTA</router-link></li>
+                        <li><router-link to="diabetolog">DIABETOLOG</router-link></li>
+                        <li><router-link to="">KONTAKT</router-link></li>
                     </ul>
                 </nav>
             </div>
