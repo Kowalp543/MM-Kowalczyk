@@ -2,7 +2,7 @@
     <div class="page-banner">
         <div class="container-banner">
             <div class="slider-banner">
-                <img class="slider" src="~@/assets/slider.jpeg/">
+                <img class="slider" src="~@/assets/sli.jpeg/">
                 <div class="label-banner">
                     <div class="label-content-baner">
                         <div class="label-info">

@@ -7,7 +7,7 @@
             <div class="page-specialty-border"></div>
             <div class="page-specialty-box">
                 <div class="specialty">
-                    <div class="specialty-photo"></div>
+                    <div class="specialty-photo"><img class="widget" src="~@/assets/widget.1.png/"></div>
                     <div class="specialty-content">
                         <p>DOBÓR OKULARÓW</p>
                     </div>
@@ -21,14 +21,14 @@
                     <div class="specialty-border"></div>
                 </div>
                 <div class="specialty">
-                    <div class="specialty-photo"></div>
+                    <div class="specialty-photo"><img class="widget" src="~@/assets/widget.3.png/"></div>
                     <div class="specialty-content">
                         <p>ZAKŁADANIE POMP INSULINOWYCH</p>
                     </div>
                     <div class="specialty-border"></div>
                 </div>
                 <div class="specialty">
-                    <div class="specialty-photo"></div>
+                    <div class="specialty-photo"><img class="widget" src="~@/assets/widget.4.png/"></div>
                     <div class="specialty-content">
                         <p>CUKRZYCA TYPU PIERWSZEGO I DRUGIEGO</p>
                     </div>
@@ -123,6 +123,11 @@ export default {
     height: 8px;
     width: 255px;
     background-color: #C7BA9F;
+}
+
+.widget{
+    height: 312px;
+    width: 255px;
 }
 
 </style>

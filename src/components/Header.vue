@@ -14,7 +14,7 @@
                         <li><router-link to="/">STRONA GŁÓWNA</router-link></li>
                         <li><router-link to="okulista">OKULISTA</router-link></li>
                         <li><router-link to="diabetolog">DIABETOLOG</router-link></li>
-                        <li><router-link to="">KONTAKT</router-link></li>
+                        <li><router-link to="kontakt">KONTAKT</router-link></li>
                     </ul>
                 </nav>
             </div>

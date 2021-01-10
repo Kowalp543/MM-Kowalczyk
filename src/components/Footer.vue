@@ -31,10 +31,10 @@
                         </div>
                         <div class="page-footer-nav-menu">
                             <ul>
-                                <li><a href="">Strona główna</a></li>
-                                <li><a href="">Okulista</a></li>
-                                <li><a href="">Diabetolog</a></li>
-                                <li><a href="">Kontakt</a></li>
+                                <li><router-link to="/">Strona główna</router-link></li>
+                                <li><router-link to="okulista">Okulista</router-link></li>
+                                <li><router-link to="diabetolog">Diabetolog</router-link></li>
+                                <li><router-link to="kontakt">Kontakt</router-link></li>
                             </ul>
                         </div>
                     </div>

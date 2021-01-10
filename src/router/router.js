@@ -8,6 +8,7 @@ import Footer from '@/components/Footer.vue';
 import Footer2 from '@/components/Footer-2.vue';
 import InformationO from '@/components/Information-O.vue';
 import InformationD from '@/components/Information-D.vue';
+import InformationC from '@/components/Information-C.vue';
 
 Vue.use(Router);
 
@@ -41,6 +42,15 @@ const RouterVue = new Router({
       components: {
           default: Header,
           informationO: InformationD,
+          footer2: Footer2,
+      }
+    },
+    {
+      path: '/kontakt',
+      name: 'kontakt',
+      components: {
+          default: Header,
+          informationO: InformationC,
           footer2: Footer2,
       }
     }

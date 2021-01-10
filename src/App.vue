@@ -7,6 +7,7 @@
     <router-view name="footer" />
     <router-view name="informationO"/>
     <router-view name="informationD"/>
+    <router-view name="informationC"/>
     <router-view name="footer2"/>
   </div>
 </template>

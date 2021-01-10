@@ -13,8 +13,8 @@
                 typu II oraz problemów związanych z cukrzycą w ciąży.</p>
             </div>
             <div class="page-about-button">
-                <div class="button"><p>OKULISTA</p></div>
-                <div class="button"><p>DIABETOLOG</p></div>
+                <router-link to="okulista"><div class="button"><p>OKULISTA</p></div></router-link>
+                <router-link to="diabetolog"><div class="button"><p>DIABETOLOG</p></div></router-link>
             </div>
         </div>
     </div>
@@ -92,6 +92,11 @@ export default {
     font-weight: 600;
     letter-spacing: 1px;
     color: #C7BA9F;
+}
+
+.page-about-button a{
+    text-decoration: none;
+
 }
 
 .button:hover{
