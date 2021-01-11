@@ -6,7 +6,7 @@ import { faPhone, faPhoneVolume, faMapMarkerAlt } from '@fortawesome/free-solid-
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
+import 'normalize.css'
 
 
 library.add(faPhone, faPhoneVolume, faMapMarkerAlt)

@@ -114,6 +114,7 @@ export default {
 
 .logo-footer{
     width: 191px;
+    height: 24px;
 }
 
 .page-footer-nav{

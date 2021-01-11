@@ -103,6 +103,7 @@ export default {
 .specialty-photo{
     height: 312px;
     background-color: #FAF8F6;
+    border-radius: 10px 10px 0 0;
 }
 
 .specialty-content{
@@ -128,6 +129,7 @@ export default {
 .widget{
     height: 312px;
     width: 255px;
+    border-radius: 10px 10px 0 0;
 }
 
 </style>

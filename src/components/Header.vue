@@ -53,7 +53,8 @@ body {
 }
 
 .logo{
-    width: 150px;
+    width: 160px;
+    height: 94px;
 }
 
 .header-right{

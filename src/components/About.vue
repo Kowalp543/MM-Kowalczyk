@@ -85,6 +85,7 @@ export default {
     transition: all 0.5s ease-in-out;
     -webkit-box-shadow: 0px 0px 20px -15px #000000;
     box-shadow: 0px 0px 20px -15px #000000;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .button p{

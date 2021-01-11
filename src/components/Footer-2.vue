@@ -73,6 +73,7 @@ export default {
 
 .logo-footer-2{
     width: 191px;
+    height: 24px;
 }
 
 .page-footer-2-nav{

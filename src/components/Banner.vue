@@ -2,7 +2,15 @@
     <div class="page-banner">
         <div class="container-banner">
             <div class="slider-banner">
-                <img class="slider" src="~@/assets/sli.jpeg/">
+                <div>
+                    <transition-group name="fade" tag="div">
+                    <div v-for="index in [currentIndex]" :key="index">
+                        <img :src="currentImg" />
+                    </div>
+                    </transition-group>
+                    <a class="prev" @click="prev" href="#">&#10094;&#10094; </a>
+                    <a class="next" @click="next" href="#">&#10095;&#10095; </a>
+                </div>
                 <div class="label-banner">
                     <div class="label-content-baner">
                         <div class="label-info">
@@ -31,8 +39,43 @@
 
 <script>
 export default {
+  name: "Slider",
+  data() {
+    return {
+      images: [
+          require("@/assets/slajd1.png"),
+          require("@/assets/slajd2.png"),
+          require("@/assets/slajd3.png")
+      ],
+      timer: null,
+      currentIndex: 0
+    };
+  },
 
-}
+  mounted: function() {
+    this.startSlide();
+  },
+
+  methods: {
+    startSlide: function() {
+      this.timer = setInterval(this.next, 4000);
+    },
+
+    next: function() {
+      this.currentIndex += 1;
+    },
+    prev: function() {
+      this.currentIndex -= 1;
+    }
+  },
+
+  computed: {
+    currentImg: function() {
+      return this.images[Math.abs(this.currentIndex) % this.images.length];
+    }
+  }
+};
+
 </script>
 
 <style>
@@ -52,12 +95,68 @@ body {
 
 .slider-banner{
     width: 100vw;
+    height: 702px;
     position: relative;
 }
 
 .slider{
     width: 98vw;
 }
+
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.9s ease;
+  overflow: hidden;
+  visibility: visible;
+  position: absolute;
+  width:100%;
+  opacity: 1;
+}
+
+.fade-enter, .fade-leave-to {
+  visibility: hidden;
+  width:100%;
+  opacity: 0;
+}
+
+img {
+  height:702px;
+  width:100%
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.7s ease;
+  text-decoration: none;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+
+
+
 
 .label-banner{
     width: 75vw;
@@ -68,6 +167,7 @@ body {
     background-color: #fff;
     -webkit-box-shadow: 5px 5px 20px -15px #000000;
     box-shadow: 5px 5px 20px -15px #000000;
+    border-radius: 0 10px 0 0;
 }
 
 .label-content-baner{

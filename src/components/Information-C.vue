@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="page-information-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.7345748455587!2d22.54161747866655!3d51.251505817199394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722570171deb341%3A0x20e8df717b8e2017!2sStanis%C5%82awa%20Leszczy%C5%84skiego%2025%2C%2020-068%20Lublin!5e0!3m2!1spl!2spl!4v1610194548186!5m2!1spl!2spl" width="1440" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.7345748455587!2d22.54161747866655!3d51.251505817199394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722570171deb341%3A0x20e8df717b8e2017!2sStanis%C5%82awa%20Leszczy%C5%84skiego%2025%2C%2020-068%20Lublin!5e0!3m2!1spl!2spl!4v1610194548186!5m2!1spl!2spl" width="1080" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>
