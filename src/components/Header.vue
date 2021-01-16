@@ -1,9 +1,11 @@
 <template>
     <header class = "page-header">
         <div class="container">
-            <a href="" class="page-logo">
-               <img class="logo" src="~@/assets/logo.png/">
-            </a>
+            <router-link to="/">
+                <a href="" class="page-logo">
+                    <img class="logo" src="~@/assets/logo.png/">
+                </a>
+            </router-link>
             <div class="header-right">
                 <div class="page-contact">
                     <p><font-awesome-icon icon="phone-volume" pull="left" :transform="{ rotate: -35 }"/>Rejestracja telefoniczna <span>604 540 510</span></p>

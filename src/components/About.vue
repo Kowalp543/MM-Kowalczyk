@@ -33,7 +33,7 @@ export default {
 }
 
 .container-about{
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -104,5 +104,28 @@ export default {
     transform: scale(0.9);
 	opacity: 0.8;
 }
+
+
+@media screen and (max-width: 480px){
+    .page-about-header p{
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    .page-about-button{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .page-about-content p{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+}
+
 
 </style>

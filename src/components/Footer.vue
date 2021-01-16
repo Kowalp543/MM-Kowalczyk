@@ -58,7 +58,7 @@ export default {
 }
 
 .container-footer{
-    width: 100vw;
+    width: 100%;
     height: 670px;
     margin: 0 auto;
     background-color: #FAF8F6;
@@ -152,6 +152,35 @@ export default {
     color: #C7BA9F;
     font-weight: 600;
     font-size: 12px;
+}
+
+
+@media screen and (max-width: 480px){
+    .page-footer-names{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        width: 80vw;
+    }
+    .name span{
+        font-size: 22px;
+    }
+
+    .name p{
+        font-size: 14px;
+    }
+    .page-footer-header p{
+        font-size: 16px;
+    }
+    .page-footer-header{
+        margin-top: 53px;
+    }
+    .page-footer-border{
+        margin-top: 50px;
+    }
+    .page-footer-nav-2{
+        width: 100%;
+    }
 }
 
 

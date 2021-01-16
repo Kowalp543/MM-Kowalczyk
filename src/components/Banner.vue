@@ -89,21 +89,19 @@ body {
 }
 
 .container-banner{
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
 }
 
 .slider-banner{
-    width: 100vw;
+    width: 100%;
     height: 702px;
     position: relative;
 }
 
 .slider{
-    width: 98vw;
+    width: 100%;
 }
-
-
 
 .fade-enter-active, .fade-leave-active {
   transition: all 0.9s ease;
@@ -156,8 +154,6 @@ img {
 
 
 
-
-
 .label-banner{
     width: 75vw;
     height: 160px;
@@ -177,7 +173,7 @@ img {
 }
 
 .label-info{
-    margin-top: 26px;
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -228,6 +224,7 @@ img {
     margin-top: 2px;
 }
 
+
 .label-banner-border{
     width: 75vw;
     height: 8px;
@@ -238,8 +235,82 @@ img {
 }
 .label-banner-border-between{
      border-right: 3px dashed #C7BA9F;
-     margin-top: 30px;
+     margin-top: 35px;
      margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 480px){
+  .label-banner{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 90%;
+    left: 0;
+  }
+
+  .label-content-baner{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .label-info{
+    margin-top: 20px;
+  }
+
+   .label-info span{
+    font-size: 12px;
+    margin-right: 2px;
+  }
+
+  .label-info p{
+    font-size: 12px;
+  }
+
+  .phone{
+      font-size: 12px;
+      position: relative;
+      right: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+
+  .phone span{
+    position: relative;
+    top: 0;
+  }
+
+  .clock{
+      font-size: 12px;
+      position: relative;
+      right: 15px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+
+  .location{
+      font-size: 12px;
+      position: relative;
+      right: 11px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+
+  .label-banner-border{
+    width: 100%;
+  }
+
+  .label-info p{
+    font-size: 10px;
+  }
+
+  .label-banner-border-between{
+    border-right: 3px dashed #C7BA9F;
+    margin-top: 35px;
+    margin-bottom: 5px;
+  }
+
 }
 
 

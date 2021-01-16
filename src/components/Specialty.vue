@@ -53,7 +53,7 @@ export default {
 }
 
 .container-specialty{
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -81,7 +81,7 @@ export default {
 }
 
 .page-specialty-box{
-    width: 80vw;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 80px;
@@ -130,6 +130,25 @@ export default {
     height: 312px;
     width: 255px;
     border-radius: 10px 10px 0 0;
+}
+
+
+@media screen and (max-width: 480px){
+    .page-specialty-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .specialty{
+        margin-top: 30px;
+    }
+    .page-specialty-header p{
+    font-size: 30px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    }
+
 }
 
 </style>
