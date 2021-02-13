@@ -105,11 +105,74 @@ export default {
 	opacity: 0.8;
 }
 
+@media screen and (max-width: 320px){
+    .page-about-header p{
+        font-size: 25px;
+        margin-bottom: 16px;
+    }
+    .page-about-content {
+        width: 80vw;
+    }
+    .page-about-button{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .page-about-content p{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .page-about-button{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
 
-@media screen and (max-width: 480px){
+}
+
+@media screen and (min-width: 321px) and (max-width: 380px){
+    .page-about-header p{
+        font-size: 27px;
+        margin-bottom: 16px;
+    }
+    .page-about-content {
+        width: 80vw;
+    }
+    .page-about-button{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .page-about-content p{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .page-about-button{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+
+}
+
+
+@media screen and (min-width: 381px) and (max-width: 480px){
     .page-about-header p{
         font-size: 30px;
         margin-bottom: 16px;
+    }
+    .page-about-content{
+        width: 70vw;
     }
     .page-about-button{
         width: 100%;
@@ -124,7 +187,41 @@ export default {
         margin-top: 40px;
         margin-bottom: 0;
     }
+}
 
+@media screen and (min-width: 481px) and (max-width: 600px){
+    .page-about-content{
+        width: 70vw;
+    }
+    .page-about-button{
+        width: 80%;
+        margin-top: 40px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .page-about-content p{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 769px){
+    .page-about-content{
+        width: 60vw;
+    }
+    .page-about-button{
+        width: 80%;
+        margin-top: 40px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .page-about-content p{
+        font-size: 14px;
+    }
 }
 
 

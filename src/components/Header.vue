@@ -112,6 +112,60 @@ body {
 
 
 
+@media screen and (min-width: 600px) and (max-width: 686px){
+    .container{
+        width: 100%;
+    }
+    .logo{
+        width: 150px;
+        height: 88px;
+    }
+    .page-contact{
+        font-size: 12px;
+    }
+    .page-nav-list li{
+        list-style-type: none;
+        margin-left: 15px;
+    }
+    .page-nav-list a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 687px) and (max-width: 769px){
+    .container{
+        width: 90%;
+    }
+    .logo{
+        width: 150px;
+        height: 88px;
+    }
+    .page-contact{
+        font-size: 12px;
+    }
+    .page-nav-list li{
+        list-style-type: none;
+        margin-left: 20px;
+    }
+    .page-nav-list a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 800px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 850px){
+    .container{
+        width: 85%;
+    }
+}
+
+
+
 
 
 

@@ -151,9 +151,6 @@ img {
   background-color: rgba(0,0,0,0.9);
 }
 
-
-
-
 .label-banner{
     width: 75vw;
     height: 160px;
@@ -240,34 +237,80 @@ img {
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 350px){
+  .slider-banner{
+    height: 702px;
+  }
+
   .label-banner{
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: absolute;
     top: 90%;
     left: 0;
   }
+  .label-info{
+    margin-top: 15px;
+  }
+   .label-info span{
+    font-size: 10px;
+    margin-right: 2px;
+  }
+  .label-info p{
+    font-size: 8px;
+  }
+  .phone{
+      font-size: 10px;
+      position: relative;
+      right: 1px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .clock{
+      font-size: 10px;
+      position: relative;
+      right: 1px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .location{
+      font-size: 10px;
+      position: relative;
+      right: 1px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .label-banner-border{
+    width: 100%;
+  }
+  .label-banner-border-between{
+    display: none;
+  }
+}
 
-  .label-content-baner{
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
+
+@media screen and (min-width: 351px) and (max-width: 450px){
+  .slider-banner{
+    height: 702px;
   }
 
+  .label-banner{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 88%;
+    left: 0;
+  }
   .label-info{
     margin-top: 20px;
   }
-
    .label-info span{
     font-size: 12px;
     margin-right: 2px;
   }
-
   .label-info p{
-    font-size: 12px;
+    font-size: 10px;
   }
-
   .phone{
       font-size: 12px;
       position: relative;
@@ -275,12 +318,6 @@ img {
       margin-bottom: 10px;
       letter-spacing: 1px;
   }
-
-  .phone span{
-    position: relative;
-    top: 0;
-  }
-
   .clock{
       font-size: 12px;
       position: relative;
@@ -288,7 +325,6 @@ img {
       margin-bottom: 10px;
       letter-spacing: 1px;
   }
-
   .location{
       font-size: 12px;
       position: relative;
@@ -296,21 +332,215 @@ img {
       margin-bottom: 10px;
       letter-spacing: 1px;
   }
-
   .label-banner-border{
     width: 100%;
   }
+  .label-banner-border-between{
+   display: none;
+  }
 
+}
+
+@media screen and (min-width: 451px) and (max-width: 480px){
+  .slider-banner{
+    height: 702px;
+  }
+
+  .label-banner{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 90%;
+    left: 0;
+  }
+  .label-info{
+    margin-top: 20px;
+  }
+   .label-info span{
+    font-size: 12px;
+    margin-right: 2px;
+  }
   .label-info p{
     font-size: 10px;
   }
+  .phone{
+      font-size: 12px;
+      position: relative;
+      right: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .clock{
+      font-size: 12px;
+      position: relative;
+      right: 15px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .location{
+      font-size: 12px;
+      position: relative;
+      right: 11px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .label-banner-border{
+    width: 100%;
+  }
+}
 
-  .label-banner-border-between{
-    border-right: 3px dashed #C7BA9F;
-    margin-top: 35px;
-    margin-bottom: 5px;
+@media screen and (min-width: 481px) and (max-width: 600px){
+  .slider-banner{
+    height: 702px;
   }
 
+  .label-banner{
+    width: 90%;
+    height: 110px;
+    position: absolute;
+    top: 88%;
+    left: 0;
+  }
+  .label-content-baner{
+    margin-left: 15px;
+  }
+  .label-info{
+    margin-top: 22px;
+  }
+   .label-info span{
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  .label-info p{
+    font-size: 12px;
+  }
+  .phone{
+      font-size: 14px;
+      position: relative;
+      right: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .clock{
+      font-size: 14px;
+      position: relative;
+      right: 15px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .location{
+      font-size: 14px;
+      position: relative;
+      right: 11px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .label-banner-border{
+    width: 100%;
+  }
+  .label-banner-border-between{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 769px){
+  .slider-banner{
+    height: 702px;
+  }
+
+  .label-banner{
+    width: 85%;
+    height: 130px;
+    position: absolute;
+    top: 86%;
+    left: 0;
+  }
+  .label-info{
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+   .label-info span{
+    font-size: 16px;
+    margin-right: 2px;
+  }
+  .label-info p{
+    font-size: 12px;
+  }
+  .phone{
+      font-size: 16px;
+      position: relative;
+      right: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .clock{
+      font-size: 16px;
+      position: relative;
+      right: 15px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .location{
+      font-size: 16px;
+      position: relative;
+      right: 11px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .label-banner-border{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1000px){
+  .slider-banner{
+    height: 702px;
+  }
+
+  .label-banner{
+    width: 80%;
+    height: 140px;
+    position: absolute;
+    top: 85%;
+    left: 0;
+  }
+  .label-info{
+    margin-top: 32px;
+    margin-left: 10px;
+  }
+
+   .label-info span{
+    font-size: 18px;
+    margin-right: 2px;
+  }
+  .label-info p{
+    font-size: 14px;
+  }
+  .phone{
+      font-size: 18px;
+      position: relative;
+      right: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .clock{
+      font-size: 18px;
+      position: relative;
+      right: 15px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .location{
+      font-size: 18px;
+      position: relative;
+      right: 11px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+  }
+  .label-banner-border{
+    width: 100%;
+  }
 }
 
 

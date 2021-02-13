@@ -154,32 +154,209 @@ export default {
     font-size: 12px;
 }
 
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 320px){
+    .container-footer{
+        height: 470px;
+    }
     .page-footer-names{
         display: flex;
         flex-direction: column;
-        margin-top: 16px;
+        margin-top: 5px;
         width: 80vw;
     }
     .name span{
-        font-size: 22px;
+        font-size: 16px;
+    }
+    .name p{
+        font-size: 12px;
+    }
+    .page-footer-header p{
+        font-size: 14px;
+    }
+    .page-footer-header{
+        margin-top: 20px;
+    }
+    .page-footer-border{
+        margin-top: 40px;
+    }
+    .page-footer-nav{
+        width: 90vw;
+    }
+    .page-footer-nav-2{
+        width: 100%;
+    }
+    .page-footer-logo{
+        margin-top: 54px;
+    }
+    .page-footer-nav-contact span{
+    font-size: 12px;
     }
 
+    .page-footer-nav-contact p{
+        font-size: 10px;
+    }
+    .page-footer-nav-menu a{
+        font-size: 10px;
+    }
+    .page-footer-nav-menu ul{
+    padding: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 380px){
+    .container-footer{
+        height: 490px;
+    }
+    .page-footer-names{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        width: 85vw;
+    }
+    .name span{
+        font-size: 18px;
+    }
     .name p{
         font-size: 14px;
+    }
+    .page-footer-header p{
+        font-size: 14px;
+    }
+    .page-footer-header{
+        margin-top: 20px;
+    }
+    .page-footer-border{
+        width: 85vw;
+
+    }
+    .page-footer-border{
+        margin-top: 40px;
+    }
+    .page-footer-nav{
+        width: 85vw;
+    }
+    .page-footer-nav-2{
+        width: 100%;
+    }
+    .page-footer-logo{
+        margin-top: 54px;
+    }
+    .page-footer-nav-contact span{
+    font-size: 12px;
+    }
+
+    .page-footer-nav-contact p{
+        font-size: 10px;
+    }
+    .page-footer-nav-menu a{
+        font-size: 10px;
+    }
+    .page-footer-nav-menu ul{
+    padding: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 480px){
+    .container-footer{
+        height: 530px;
+    }
+    .page-footer-names{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        width: 85vw;
+    }
+    .name span{
+        font-size: 20px;
+    }
+    .name p{
+        font-size: 16px;
     }
     .page-footer-header p{
         font-size: 16px;
     }
     .page-footer-header{
-        margin-top: 53px;
+        margin-top: 20px;
     }
     .page-footer-border{
-        margin-top: 50px;
+        width: 85vw;
+
+    }
+    .page-footer-border{
+        margin-top: 40px;
+    }
+    .page-footer-nav{
+        width: 85vw;
     }
     .page-footer-nav-2{
         width: 100%;
+    }
+    .page-footer-logo{
+        margin-top: 54px;
+    }
+    .page-footer-nav-menu ul{
+    padding: 0 0 0 20px;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 600px){
+    .container-footer{
+        height: 570px;
+    }
+    .page-footer-names{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        width: 80vw;
+    }
+    .page-footer-header{
+        margin-top: 20px;
+    }
+    .page-footer-border{
+        margin-top: 40px;
+    }
+    .page-footer-nav-2{
+        width: 100%;
+    }
+    .page-footer-logo{
+        margin-top: 54px;
+    }
+    .page-footer-nav-menu ul{
+    padding: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 769px){
+    .container-footer{
+        height: 600px;
+    }
+    .page-footer-names{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        width: 80vw;
+    }
+    .page-footer-header{
+        margin-top: 30px;
+    }
+    .page-footer-border{
+        margin-top: 40px;
+    }
+    .page-footer-nav-2{
+        width: 75%;
+    }
+    .page-footer-logo{
+        margin-top: 54px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 850px){
+    .page-footer-names{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        width: 80vw;
     }
 }
 
