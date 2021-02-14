@@ -9,7 +9,7 @@
                 <div class="page-information-D-label-content">
                     <div class="page-information-D-label-info">
                         <div class="info-3"><span>Dr n.med. Mariusz Kowalczyk</span></div>
-                        <p><span>Specjalista Chorób Wewnętrznych i Diabetologii</span></p>
+                        <p><span>Specjalista Chorób Wewnętrznych <br> i Diabetologii</span></p>
                         <p>Wieloletni asystent, wykładowca Kliniki<br>
                             Endokrynologii Uniwersytety<br>
                             Medycznego w Lublinie, starszy<br>
@@ -19,16 +19,18 @@
                             Towarzystwa Diabetologicznego</p>
                     </div>
                     <div class="page-information-D-label-border-between"></div>
-                    <div class="page-information-D-label-info">
-                        <div class="phone-3"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>REJESTRACJA</div>
-                        <p>tel. 000 000 000</p>
-                    </div>
-                    <div class="page-information-D-label-border-between"></div>
-                    <div class="page-information-D-label-info">
-                        <div class="timetable-2"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
-                        <p>Czw: 16:00-20:00</p>
-                        <p>Sob: termin wizyty możliwy<br>
-                            po telefonicznym uzgodnieniu</p>
+                    <div class="page-information-D-label-info-2">
+                        <div class="page-information-D-label-info">
+                            <div class="phone-3"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>REJESTRACJA</div>
+                            <p>tel. 000 000 000</p>
+                        </div>
+                        <div class="page-information-D-label-border-between-2"></div>
+                        <div class="page-information-D-label-info">
+                            <div class="timetable-2"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
+                            <p>Czw: 16:00-20:00</p>
+                            <p>Sob: termin wizyty możliwy<br>
+                                po telefonicznym uzgodnieniu</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,7 +59,7 @@ export default {
 }
 
 .container-information-D{
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -88,7 +90,7 @@ export default {
 
 .page-information-D-label{
     height: 306px;
-    width: 80vw;
+    width: 80%;
     background-color: #C7BA9F;
     margin-top: 36px;
     -webkit-box-shadow: 5px 5px 20px -15px #000000;
@@ -99,6 +101,13 @@ export default {
     display: flex;
     justify-content: space-around;
     text-align: center;
+}
+
+.page-information-D-label-info-2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
 }
 
 .page-information-D-label-info{
@@ -115,7 +124,7 @@ export default {
 }
 
 .info-3 span{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -143,7 +152,7 @@ export default {
 .phone-3 span{
     font-size: 20px;
     position: relative;
-    top: 5px;
+    top: 2px;
     right: 5px;
 }
 
@@ -165,8 +174,12 @@ export default {
 
 .page-information-D-label-border-between{
     border-right: 3px dashed #fff;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.page-information-D-label-border-between-2{
+    margin-right: 30px;
 }
 
 .page-information-D-info{
@@ -190,6 +203,321 @@ export default {
     margin-bottom: 30px;
 }
 
+
+
+
+@media screen and (max-width: 480px){
+    .page-information-D{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-information-D{
+        width: 90%;
+    }
+    .page-information-D-header p{
+        font-size: 30px;
+    }
+    .page-information-D-border{
+        height: 6px;
+    }
+    .page-information-D-label{
+        height: 470px;
+        width: 90%;
+    }
+    .page-information-D-label-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-information-D-label-info-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .page-information-D-label-border-between-2{
+        border-top: 3px dashed #fff;
+        margin-top: 25px;
+        margin-right: 79px;
+        margin-left: 79px;
+    }
+    .page-information-D-label-info{
+        align-items: center;
+    }
+    .info-3 span{
+        font-size: 18px;
+    }
+    .page-information-D-label-info p span{
+        font-size: 16px;
+    }
+    .page-information-D-label-info p{
+        font-size: 14px;
+    }
+    .phone-3{
+        font-size: 16px;
+        margin-bottom: 10px;
+        position: relative;
+        right: 0px;
+    }
+    .phone-3 span{
+        font-size: 16px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    .timetable-2{
+        font-size: 16px;
+        position: relative;
+        right: 0px;
+        margin-bottom: 10px;
+
+    }
+    .timetable-2 span{
+        font-size: 18px;
+        position: relative;
+        right: 5px;
+    }
+    .page-information-D-label-border-between{
+        border-top: 3px dashed #fff;
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+    .page-information-D-info{
+        margin-top: 67px;
+    }
+    .page-information-D-info h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .page-information-D-info p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px){
+   .page-information-D{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-information-D{
+        width: 90%;
+    }
+    .page-information-D-header p{
+        font-size: 34px;
+    }
+    .page-information-D-border{
+        height: 8px;
+    }
+    .page-information-D-label{
+        height: 370px;
+        width: 90%;
+    }
+    .page-information-D-label-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-information-D-label-info-2{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .page-information-D-label-border-between-2{
+        border-right: 3px dashed #fff;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .page-information-D-label-info{
+        align-items: center;
+    }
+    .info-3 span{
+        font-size: 18px;
+    }
+    .page-information-D-label-info p span{
+        font-size: 16px;
+    }
+    .page-information-D-label-info p{
+        font-size: 14px;
+    }
+    .phone-3{
+        font-size: 16px;
+        margin-bottom: 10px;
+        position: relative;
+        right: 0px;
+    }
+    .phone-3 span{
+        font-size: 16px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    .timetable-2{
+        font-size: 16px;
+        position: relative;
+        right: 0px;
+        margin-bottom: 10px;
+
+    }
+    .timetable-2 span{
+        font-size: 18px;
+        position: relative;
+        right: 5px;
+    }
+    .page-information-D-label-border-between{
+        display: none;
+    }
+    .page-information-D-info{
+        margin-top: 67px;
+    }
+    .page-information-D-info h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .page-information-D-info p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+   .page-information-D{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container-information-D{
+        width: 80%;
+    }
+    .page-information-D-header p{
+        font-size: 34px;
+    }
+    .page-information-D-border{
+        height: 8px;
+    }
+    .page-information-D-label{
+        height: 400px;
+        width: 90%;
+    }
+    .page-information-D-label-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-information-D-label-info-2{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .page-information-D-label-border-between-2{
+        border-right: 3px dashed #fff;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .page-information-D-label-info{
+        align-items: center;
+    }
+    .info-3 span{
+        font-size: 20px;
+    }
+    .page-information-D-label-info p span{
+        font-size: 18px;
+    }
+    .page-information-D-label-info p{
+        font-size: 16px;
+    }
+    .phone-3{
+        font-size: 18px;
+        margin-bottom: 10px;
+        position: relative;
+        right: 0px;
+    }
+    .phone-3 span{
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    .timetable-2{
+        font-size: 18px;
+        position: relative;
+        right: 0px;
+        margin-bottom: 10px;
+
+    }
+    .timetable-2 span{
+        font-size: 20px;
+        position: relative;
+        right: 5px;
+    }
+    .page-information-D-label-border-between{
+        display: none;
+    }
+    .page-information-D-info{
+        margin-top: 67px;
+    }
+    .page-information-D-info h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .page-information-D-info p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px){
+    .container-information-D{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1024px){
+    .container-information-D{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1150px){
+    .page-information-D-label-border-between-2{
+        margin-right: 10px;
+    }
+    .timetable-2{
+        position: relative;
+        right: 15px;
+    }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1280px){
+    .page-information-D-label-border-between-2{
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1365px){
+    .page-information-D-label-border-between-2{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1440px){
+    .page-information-D-label-border-between-2{
+        margin-right: 60px;
+    }
+}
+@media screen and (min-width: 1441px){
+    .page-information-D-label-border-between-2{
+        margin-right: 80px;
+    }
+}
 
 
 </style>

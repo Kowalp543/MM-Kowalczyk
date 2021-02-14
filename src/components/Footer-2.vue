@@ -47,7 +47,7 @@ export default {
 }
 
 .container-footer-2{
-    width: 100vw;
+    width: 100%;
     height: 372px;
     margin: 0 auto;
     background-color: #FAF8F6;
@@ -111,6 +111,106 @@ export default {
     color: #C7BA9F;
     font-weight: 600;
     font-size: 12px;
+}
+
+
+@media screen and (max-width: 320px){
+    .container-footer-2{
+        height: 322px;
+    }
+    .page-footer-2-nav{
+        width: 90vw;
+    }
+    .page-footer-2-nav-2{
+        width: 100%;
+    }
+    .page-footer-2-logo{
+        margin-top: 54px;
+    }
+    .page-footer-2-nav-contact span{
+        font-size: 12px;
+    }
+
+    .page-footer-2-nav-contact p{
+        font-size: 10px;
+    }
+    .page-footer-2-nav-menu a{
+        font-size: 10px;
+    }
+    .page-footer-2-nav-menu ul{
+        padding: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 380px){
+    .container-footer-2{
+        height: 322px;
+    }
+    .page-footer-2-nav{
+        width: 85vw;
+    }
+    .page-footer-2-nav-2{
+        width: 100%;
+    }
+    .page-footer-2-logo{
+        margin-top: 54px;
+    }
+    .page-footer-2-nav-contact span{
+        font-size: 12px;
+    }
+
+    .page-footer-2-nav-contact p{
+        font-size: 10px;
+    }
+    .page-footer-2-nav-menu a{
+        font-size: 10px;
+    }
+    .page-footer-2-nav-menu ul{
+        padding: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 480px){
+    .container-footer-2{
+        height: 322px;
+    }
+    .page-footer-2-nav{
+        width: 85vw;
+    }
+    .page-footer-2-nav-2{
+        width: 100%;
+    }
+    .page-footer-2-logo{
+        margin-top: 54px;
+    }
+    .page-footer-2-nav-menu ul{
+        padding: 0 0 0 20px;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 600px){
+    .container-footer-2{
+        height: 322px;
+    }
+    .page-footer-2-nav-2{
+        width: 100%;
+    }
+    .page-footer-2-logo{
+        margin-top: 54px;
+    }
+    .page-footer-2-nav-menu ul{
+    padding: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 769px){
+    .page-footer-2-nav-2{
+        width: 75%;
+    }
+    .page-footer-2-logo{
+        margin-top: 54px;
+    }
 }
 
 

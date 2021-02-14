@@ -155,6 +155,9 @@ export default {
         margin-bottom: 16px;
         margin-top: 16px;
     }
+    .page-specialty-border{
+        height: 6px;
+    }
 }
 
 @media screen and (min-width:321px) and (max-width: 380px){
@@ -171,6 +174,9 @@ export default {
         font-size: 27px;
         margin-bottom: 16px;
         margin-top: 16px;
+    }
+    .page-specialty-border{
+        height: 6px;
     }
 }
 
@@ -189,6 +195,9 @@ export default {
         font-size: 30px;
         margin-bottom: 16px;
         margin-top: 16px;
+    }
+    .page-specialty-border{
+        height: 6px;
     }
 }
 

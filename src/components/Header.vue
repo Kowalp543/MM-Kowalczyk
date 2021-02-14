@@ -6,11 +6,23 @@
                     <img class="logo" src="~@/assets/logo.png/">
                 </a>
             </router-link>
+
+            <!-- <v-menu offset-y>
+                <v-btn flat slot="activator" color="black">
+                    <v-icon left>&#8595;</v-icon>
+                    <span>Menu</span>
+                </v-btn>
+                <v-list>
+                    <v-list-tile v-for="link in links" :key="link.text" router :to="link.router">
+                        <v-list-tile-title>{{ link.text }}</v-list-tile-title>
+                    </v-list-tile>
+                </v-list>
+            </v-menu> -->
+
             <div class="header-right">
                 <div class="page-contact">
                     <p><font-awesome-icon icon="phone-volume" pull="left" :transform="{ rotate: -35 }"/>Rejestracja telefoniczna <span>604 540 510</span></p>
                 </div>
-
                 <nav class="page-nav">
                     <ul class ="page-nav-list">
                         <li><router-link to="/">STRONA GŁÓWNA</router-link></li>
@@ -27,6 +39,17 @@
 <script>
     export default
     {
+    //     data() {
+    //         return {
+    //             drawer: false,
+    //             links: [
+    //                 {text: "Strona główna", router: '/'},
+    //                 {text: "Okulista", router: '/'},
+    //                 {text: "Diabetolog", router: '/'},
+    //                 {text: "Kontakt", router: '/'},
+    //             ]
+    //         }
+    //     }
 
     }
 

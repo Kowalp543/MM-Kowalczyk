@@ -110,6 +110,9 @@ export default {
         font-size: 25px;
         margin-bottom: 16px;
     }
+    .page-about-border{
+        height: 6px;
+    }
     .page-about-content {
         width: 80vw;
     }
@@ -139,6 +142,9 @@ export default {
     .page-about-header p{
         font-size: 27px;
         margin-bottom: 16px;
+    }
+    .page-about-border{
+        height: 6px;
     }
     .page-about-content {
         width: 80vw;
@@ -170,6 +176,9 @@ export default {
     .page-about-header p{
         font-size: 30px;
         margin-bottom: 16px;
+    }
+    .page-about-border{
+        height: 6px;
     }
     .page-about-content{
         width: 70vw;

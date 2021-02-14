@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import vuetify from 'vuetify'
 import router from './router/router.js'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faPhone, faPhoneVolume, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
@@ -17,10 +18,13 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
+Vue.use(vuetify)
+
 new Vue({
   render: h => h(App),
   el: '#app',
   router,
+  vuetify,
   components: { App },
   template: '<App/>',
 }).$mount('#app')

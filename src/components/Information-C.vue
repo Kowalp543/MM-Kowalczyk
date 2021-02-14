@@ -120,4 +120,41 @@ export default {
     font-size: 20px;
 }
 
+@media screen and (max-width: 480px){
+    .page-information-C-header p{
+        font-size: 25px;
+    }
+    .page-information-C-border{
+        height: 6px;
+    }
+    .page-information-C-label-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .label-element{
+        margin-top: 30px;
+    }
+    .page-information-map{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 701px){
+    .page-information-C-header p{
+        font-size: 34px;
+    }
+    .page-information-C-label-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .label-element{
+        margin-top: 30px;
+    }
+    .page-information-map{
+        display: none;
+    }
+}
+
 </style>
