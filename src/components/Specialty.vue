@@ -161,6 +161,9 @@ export default {
 }
 
 @media screen and (min-width:321px) and (max-width: 380px){
+    body{
+        overflow-x: hidden;
+    }
     .page-specialty-box, .page-specialty-box-1, .page-specialty-box-2{
         display: flex;
         flex-direction: column;

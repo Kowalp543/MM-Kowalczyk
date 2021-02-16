@@ -204,6 +204,9 @@ export default {
 }
 
 @media screen and (min-width: 321px) and (max-width: 380px){
+    body{
+        overflow-x: hidden;
+    }
     .container-footer{
         height: 490px;
     }

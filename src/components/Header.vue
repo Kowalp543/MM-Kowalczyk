@@ -7,17 +7,6 @@
                 </a>
             </router-link>
 
-            <!-- <v-menu offset-y>
-                <v-btn flat slot="activator" color="black">
-                    <v-icon left>&#8595;</v-icon>
-                    <span>Menu</span>
-                </v-btn>
-                <v-list>
-                    <v-list-tile v-for="link in links" :key="link.text" router :to="link.router">
-                        <v-list-tile-title>{{ link.text }}</v-list-tile-title>
-                    </v-list-tile>
-                </v-list>
-            </v-menu> -->
 
             <div class="header-right">
                 <div class="page-contact">
@@ -31,6 +20,17 @@
                         <li><router-link to="kontakt">KONTAKT</router-link></li>
                     </ul>
                 </nav>
+                <nav class="phone-nav">
+                    <button class="phone-nav-button">Menu</button>
+                    <div class="phone-nav-menu">
+                        <ul>
+                            <li><router-link to="/">STRONA GŁÓWNA</router-link></li>
+                            <li><router-link to="okulista">OKULISTA</router-link></li>
+                            <li><router-link to="diabetolog">DIABETOLOG</router-link></li>
+                            <li><router-link to="kontakt">KONTAKT</router-link></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -39,17 +39,6 @@
 <script>
     export default
     {
-    //     data() {
-    //         return {
-    //             drawer: false,
-    //             links: [
-    //                 {text: "Strona główna", router: '/'},
-    //                 {text: "Okulista", router: '/'},
-    //                 {text: "Diabetolog", router: '/'},
-    //                 {text: "Kontakt", router: '/'},
-    //             ]
-    //         }
-    //     }
 
     }
 
@@ -74,7 +63,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 85px;
-    position:sticky;
+    position: sticky;
 }
 
 .logo{
@@ -105,6 +94,10 @@ body {
     margin-left: 10px;
 }
 
+.phone-nav{
+    display: none;
+}
+
 .page-nav{
     height: 30px;
 }
@@ -133,9 +126,105 @@ body {
     color: #A0917A;
 }
 
+@media screen and (max-width: 600px){
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+}
+.page-nav{
+    display: none;
+}
+.page-contact{
+    display: none;
+}
+.phone-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 20px;
+}
+
+.phone-nav-button {
+    border-radius: 5px;
+    border: 2px solid #C7BA9F;
+    color: #000;
+    background: #FAF8F6;
+    -webkit-box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
+    box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
+}
+
+.phone-nav-menu {
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    height: 200px;
+    width: 190px;
+    top: 57px;
+    right: -200px;
+    padding: 0;
+    background: #FAF8F6;
+    transition: 0.5s transform ease-in-out;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
+    box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
+    border: 2px solid #C7BA9F;
+    z-index: 100;
+}
+
+.phone-nav-menu ul {
+  position: absolute;
+  display: flex;
+  height: calc(100% - 20px);
+  flex-wrap: wrap;
+  margin: 0 10px;
+  padding: 0;
+  list-style-type: none;
+  align-content: flex-start
+}
+
+.phone-nav-menu ul li {
+  display: flex;
+  list-style-type: none;
+  height: 30px;
+  background: #ffffff;
+  flex-basis: 100%;
+  margin-top: 15px;
+  color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+text-decoration: none;
+border: 2px solid #C7BA9F;
+}
+
+.phone-nav-menu ul li a{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #000;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.phone-nav-menu ul li a:hover{
+    color: #A0917A;
+}
+
+.phone-nav-button:focus ~ .phone-nav-menu, .phone-nav-menu:hover {
+  transform: translateX(-200px);
+}
+}
 
 
-@media screen and (min-width: 600px) and (max-width: 686px){
+@media screen and (min-width: 601px) and (max-width: 686px){
     .container{
         width: 100%;
     }

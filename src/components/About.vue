@@ -106,6 +106,9 @@ export default {
 }
 
 @media screen and (max-width: 320px){
+    body{
+        overflow-x: hidden;
+    }
     .page-about-header p{
         font-size: 25px;
         margin-bottom: 16px;
@@ -139,6 +142,9 @@ export default {
 }
 
 @media screen and (min-width: 321px) and (max-width: 380px){
+    body{
+        overflow-x: hidden;
+    }
     .page-about-header p{
         font-size: 27px;
         margin-bottom: 16px;

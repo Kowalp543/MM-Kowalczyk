@@ -5,7 +5,7 @@
                 <div>
                     <transition-group name="fade" tag="div">
                     <div v-for="index in [currentIndex]" :key="index">
-                        <img :src="currentImg" />
+                        <img class="photo" :src="currentImg" />
                     </div>
                     </transition-group>
                     <a class="prev" @click="prev" href="#">&#10094;&#10094; </a>
@@ -95,8 +95,12 @@ body {
 
 .slider-banner{
     width: 100%;
-    height: 702px;
+    height: 50vw;
     position: relative;
+}
+
+.photo{
+  height: 50vw;
 }
 
 .slider{
@@ -211,7 +215,7 @@ img {
 
 .phone span{
     position: relative;
-    top: 5px;
+    top: 0px;
 }
 
 
@@ -237,9 +241,16 @@ img {
 }
 
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 424px){
+  body{
+    overflow-x: hidden;
+  }
   .slider-banner{
-    height: 702px;
+    height: 80vw;
+  }
+
+  .photo{
+    height: 80vw;
   }
 
   .label-banner{
@@ -289,9 +300,13 @@ img {
 }
 
 
-@media screen and (min-width: 351px) and (max-width: 450px){
+@media screen and (min-width: 425px) and (max-width: 480px){
   .slider-banner{
-    height: 702px;
+    height: 80vw;
+  }
+
+  .photo{
+    height: 80vw;
   }
 
   .label-banner{
@@ -341,57 +356,13 @@ img {
 
 }
 
-@media screen and (min-width: 451px) and (max-width: 480px){
-  .slider-banner{
-    height: 702px;
-  }
-
-  .label-banner{
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 90%;
-    left: 0;
-  }
-  .label-info{
-    margin-top: 20px;
-  }
-   .label-info span{
-    font-size: 12px;
-    margin-right: 2px;
-  }
-  .label-info p{
-    font-size: 10px;
-  }
-  .phone{
-      font-size: 12px;
-      position: relative;
-      right: 18px;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-  }
-  .clock{
-      font-size: 12px;
-      position: relative;
-      right: 15px;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-  }
-  .location{
-      font-size: 12px;
-      position: relative;
-      right: 11px;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-  }
-  .label-banner-border{
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 481px) and (max-width: 600px){
   .slider-banner{
-    height: 702px;
+    height: 80vw;
+  }
+
+  .photo{
+    height: 80vw;
   }
 
   .label-banner{
@@ -446,7 +417,11 @@ img {
 
 @media screen and (min-width: 601px) and (max-width: 769px){
   .slider-banner{
-    height: 702px;
+    height: 80vw;
+  }
+
+  .photo{
+    height: 80vw;
   }
 
   .label-banner{
@@ -495,7 +470,11 @@ img {
 
 @media screen and (min-width: 770px) and (max-width: 1000px){
   .slider-banner{
-    height: 702px;
+    height: 70vw;
+  }
+
+  .photo{
+    height: 70vw;
   }
 
   .label-banner{
@@ -542,6 +521,17 @@ img {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1100px){
+  .slider-banner{
+    height: 60vw;
+  }
+
+  .photo{
+    height: 60vw;
+  }
+}
+
 
 
 

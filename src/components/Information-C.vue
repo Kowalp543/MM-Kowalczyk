@@ -121,6 +121,9 @@ export default {
 }
 
 @media screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
     .page-information-C-header p{
         font-size: 25px;
     }

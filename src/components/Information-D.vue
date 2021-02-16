@@ -93,8 +93,10 @@ export default {
     width: 80%;
     background-color: #C7BA9F;
     margin-top: 36px;
-    -webkit-box-shadow: 5px 5px 20px -15px #000000;
-    box-shadow: 5px 5px 20px -15px #000000;
+    -webkit-box-shadow: 0px 5px 20px -9px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 20px -9px rgba(0,0,0,1);
+    box-shadow: 0px 5px 20px -9px rgba(0,0,0,1);
+    border-radius: 10px;
 }
 
 .page-information-D-label-content{
@@ -207,6 +209,9 @@ export default {
 
 
 @media screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
     .page-information-D{
         display: flex;
         flex-direction: column;
