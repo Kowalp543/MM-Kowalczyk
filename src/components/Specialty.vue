@@ -8,7 +8,7 @@
             <div class="page-specialty-box">
                 <div class="page-specialty-box-1">
                     <div class="specialty">
-                        <div class="specialty-photo"><img class="widget" src="~@/assets/widget.1.png/"></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Dobór okularów" src="~@/assets/W1.jpg/"></div>
                         <div class="specialty-content">
                             <p>DOBÓR OKULARÓW</p>
                         </div>
@@ -24,14 +24,14 @@
                 </div>
                 <div class="page-specialty-box-2">
                     <div class="specialty">
-                        <div class="specialty-photo"><img class="widget" src="~@/assets/widget.3.png/"></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Zakładanie pomp insulinowych" src="~@/assets/W3.jpg/"></div>
                         <div class="specialty-content">
                             <p>ZAKŁADANIE POMP INSULINOWYCH</p>
-                        </div>
+                        </div>  
                         <div class="specialty-border"></div>
                     </div>
                     <div class="specialty">
-                        <div class="specialty-photo"><img class="widget" src="~@/assets/widget.4.png/"></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Cukrzyca typu pierwszego i drugiego" src="~@/assets/W4.jpg/"></div>
                         <div class="specialty-content">
                             <p>CUKRZYCA TYPU PIERWSZEGO I DRUGIEGO</p>
                         </div>
@@ -135,9 +135,11 @@ export default {
 }
 
 .widget{
-    height: 312px;
-    width: 255px;
+    /* height: 312px;
+    width: 255px; */
     border-radius: 10px 10px 0 0;
+    aspect-ratio: attr(width) / attr(height);
+
 }
 
 @media screen and (max-width: 320px){

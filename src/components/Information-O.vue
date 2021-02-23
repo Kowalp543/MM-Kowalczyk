@@ -1,40 +1,107 @@
 <template>
     <div class="container-information-O">
         <div class="page-information-O">
-            <div class="page-information-O-header">
-                <p>OKULISTA</p>
+            <div class="header-box-2">
+                <div class="page-information-O-header">
+                    <p>OKULISTA</p>
+                </div>
+                <div class="page-information-O-border"></div>
             </div>
-            <div class="page-information-O-border"></div>
-            <div class="page-information-O-label">
-                <div class="page-information-O-label-content">
-                    <div class="page-information-O-label-info">
-                        <div class="info-2"><span>Lek. med. Małgorzata Kowalczyk</span></div>
-                        <p><span>Specjalista Chorób Oczu</span></p>
-                        <p>Starszy asystent Kliniki Okulistyki</p>
-                        <p>Ogólnej w Lublinie</p>
-                    </div>
-                    <div class="page-information-O-label-border-between"></div>
-                    <div class="page-information-O-label-info-2">
+            <div class="label-box-2">
+                <div class="page-information-O-label">
+                    <div class="page-information-O-label-content">
                         <div class="page-information-O-label-info">
-                            <div class="phone-2"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>REJESTRACJA</div>
-                            <p>tel. 604 540 510</p>
+                            <div class="info-2"><span>Lek. med. Małgorzata Kowalczyk</span></div>
+                            <p><span>Specjalista Chorób Oczu</span></p>
+                            <p>Starszy asystent Kliniki Okulistyki<br>
+                            Ogólnej w Lublinie</p>
                         </div>
-                        <div class="page-information-O-label-border-between-2"></div>
-                        <div class="page-information-O-label-info">
-                            <div class="timetable"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
-                            <p>Pn-Pt: 16:00-20:00</p>
-                            <p>Sob: 12:00-16:00</p>
+                        <div class="page-information-O-label-border-between"></div>
+                        <div class="page-information-O-label-info-2">
+                            <div class="page-information-O-label-info">
+                                <div class="phone-2"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>REJESTRACJA</div>
+                                <p>tel. 604 540 510</p>
+                            </div>
+                            <div class="page-information-O-label-border-between-2"></div>
+                            <div class="page-information-O-label-info">
+                                <div class="timetable"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
+                                <p>Wt: 14:00-16:00</p>
+                                <p>Czw: 8:00-12:00</p>
+                                <p>Pt: 15:00-19:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="page-information-O-info">
-                <h2>CZŁONKOSTWO</h2>
-                <p>Polskie Towarzystwo Okulistyczne, Sekcja Dziecięca Polskiego Towarzystwa<br>
-                Okulistycznego, World Society of Paediatric Ophthalmology and Strabismus</p>
-                <h2>ZAINTERESOWANIA</h2>
-                <p>okulistyka dziecięca z uwzględnieniem chorób rzadkich, operacje zeza u dzieci,<br>
-                operacje zeza u dorosłych ze szwami regulowanymi</p>
+            <div class="page-information-O-box">
+                <div class="page-information-O-info">
+                    <h2>CZŁONKOSTWO</h2>
+                    <ul>
+                        <li><span>Polskie Towarzystwo Okulistyczne</span></li>
+                        <li><span>Sekcja Dziecięca Polskiego Towarzystwa Okulistycznego</span></li>
+                        <li><span>Sekcja Strabologiczna Polskiego Towarzystwa Okulistycznego</span></li>
+                        <li><span>World Society of Paediatric Ophthalmology and Strabismus</span></li>
+                    </ul>
+                    <h2>ZAKRES DZIAŁALNOŚCI</h2>
+                    <ul>
+                        <li>Diagnostyka i leczenie chorób narządu wzroku wieku dziecięcego z uwzględnieniem tzw. chorób rzadkich.</li>
+                        <li>Diagnostyka i leczenie niedrożności dróg łzowych u dzieci.</li>
+                        <li>Wykrywanie i leczenie wad wzroku u dzieci.
+                            <ul>
+                                <li>Leczenie krótkowzroczności za pomocą 0.01% Atropiny.</li>
+                            </ul>
+                        </li>
+                        <li>Wykrywanie i leczenie skurczu akomodacji.
+                            <ul>
+                                <li>Obiektywne i subiektywne badanie zaburzeń akomodacji, konwergencji oraz określanie oka dominującego za pomocą linijki RAF.</li>
+                            </ul>
+                        </li>
+                        <li>Diagnostyka i leczenie zeza u dzieci i dorosłych.
+                            <ul>
+                                <li>Badanie ostrości wzroku, pomiar kąta zeza listwami pryzmatycznymi, badanie obuocznego widzenia, dobór okularów.</li>
+                            </ul>
+                        </li>
+                        <li>Leczenie niedowidzenia u dzieci.
+                            <ul>
+                                <li>Badanie ostrości wzroku za pomocą tablic logarytmicznych do dali i bliży, ocena stopnia niedowidzenia przy użyciu tablic wykorzystujących zjawisko natłoku, ocena ostrości wzroku za pomocą tablic Lea Hyvärinen do dali i bliży. Leczenie niedowidzenia na podstawie zaleceń amerykańskiej grupy PEDIG (Pediatric Eye Disease Investigator Group).</li>
+                            </ul>
+                        </li>
+                        <li>Ocena stopnia obuocznego widzenia.
+                            <ul>
+                                <li>Stosowane są różne testy określające obecność lub brak oraz zakres jednoczesnej percepcji i fuzji. Do badania jednoczesnej percepcji wykorzystywany jest test Wortha do dali i bliży. Fuzja badana jest za pomocą listwy pryzmatycznej. Obecność stereoskopii czyli widzenia przestrzennego (3D), które jest najwyższym stopniem widzenia obuocznego jest wykrywana za pomocą testu Motyla, testu TNO i testu Langa.</li>
+                            </ul>
+                        </li>
+                        <li>Dobór szkieł pryzmatycznych.
+                            <ul>
+                                <li>Szkła pryzmatyczne są pomocne w leczeniu podwójnego widzenia, zezach porażennych, zezach zbieżnych, rozbieżnych i pionowych o małym kącie oraz w resztkowych zezach pooperacyjnych.</li>
+                            </ul>
+                        </li>
+                        <li>Leczenie operacyjne zeza u dzieci i dorosłych.
+                            <ul>
+                                <li>Operacje zeza u dorosłych wykonywane są z wykorzystaniem szwów regulowanych, stosowanych w profilaktyce podwójnego widzenia, które może wystąpić po operacji zeza w wieku dorosłym.</li>
+                            </ul>
+                        </li>
+                        <li>Komputerowe badanie wady refrakcji.
+                            <ul>
+                                <li>Jest wykonywane przy użyciu autorefraktometru stacjonarnego oraz ręcznego. Autorefraktometr ręczny (Welch Allyn) jest niezwykle pomocny do określania wady wzroku u najmłodszych dzieci (ok. 1 roku życia) czy z problemami neurologicznymi.</li>
+                            </ul>
+                        </li>
+                        <li>Ocena widzenia metodą uprzywilejowanego spojrzenia (preferential looking PL).
+                            <ul>
+                                <li>Metoda wykorzystująca paletki Lea Hyvärinen do określania ostrości wzroku u najmłodszych, kilkumiesięcznych dzieci.</li>
+                            </ul>
+                        </li>
+                        <li>Dobór okularów u dzieci i dorosłych.</li>
+                        <li>Badanie dna oka u dzieci i dorosłych.
+                            <ul>
+                                <li>Jest wykonywane za pomocą soczewki Volka oraz wziernika bezpośredniego.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div>
+                    <img class="page-information-O-photo" alt="Małgorzata Kowalczyk" src="~@/assets/D1.jpg/" >
+                </div> -->
             </div>
         </div>
     </div>
@@ -57,10 +124,16 @@ export default {
     margin: 0 auto;
 }
 
-.page-information-O{
+.header-box-2{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.label-box-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page-information-O-header{
@@ -83,7 +156,7 @@ export default {
 }
 
 .page-information-O-label{
-    height: 140px;
+    height: 145px;
     width: 100%;
     background-color: #C7BA9F;
     margin-top: 36px;
@@ -96,7 +169,7 @@ export default {
 .page-information-O-label-content{
     display: flex;
     justify-content: space-around;
-    text-align: center;
+    text-align: flex-start;
 }
 
 .page-information-O-label-info-2{
@@ -119,12 +192,12 @@ export default {
 }
 
 .info-2 span{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .page-information-O-label-info p span{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 100;
 }
 
@@ -177,6 +250,13 @@ export default {
     margin-right: 30px;
 }
 
+
+.page-information-O-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .page-information-O-info{
     margin-top: 87px;
     display: flex;
@@ -184,8 +264,14 @@ export default {
     align-items: flex-start;
 }
 
+.page-information-O-photo{
+    height: 250px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
 .page-information-O-info h2{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -198,11 +284,37 @@ export default {
     margin-bottom: 30px;
 }
 
+.page-information-O-info li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    font-weight: 600;
+}
+
+.page-information-O-info li span{
+    color: #000;
+}
+
+.page-information-O-info ul{
+    margin-top: 10px;
+}
+
+.page-information-O-info ul>li>ul>li{
+    list-style-type: disc;
+    color: #C7BA9F;
+}
+
 @media screen and (max-width: 480px){
     body{
         overflow-x: hidden;
     }
-    .page-information-O{
+    .header-box-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .label-box-2{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -217,7 +329,7 @@ export default {
         height: 6px;
     }
     .page-information-O-label{
-        height: 370px;
+        height: 345px;
         width: 90%;
     }
     .page-information-O-label-content{
@@ -240,13 +352,13 @@ export default {
         align-items: center;
     }
     .info-2 span{
-        font-size: 18px;
-    }
-    .page-information-O-label-info p span{
         font-size: 16px;
     }
-    .page-information-O-label-info p{
+    .page-information-O-label-info p span{
         font-size: 14px;
+    }
+    .page-information-O-label-info p{
+        font-size: 12px;
     }
     .phone-2{
         font-size: 16px;
@@ -255,20 +367,20 @@ export default {
         right: 0px;
     }
     .phone-2 span{
-        font-size: 16px;
+        font-size: 14px;
         position: relative;
         top: 0px;
         right: 0px;
     }
     .timetable{
-        font-size: 16px;
+        font-size: 14px;
         position: relative;
         right: 0px;
         margin-bottom: 10px;
 
     }
     .timetable span{
-        font-size: 18px;
+        font-size: 16px;
         position: relative;
         right: 5px;
     }
@@ -287,18 +399,56 @@ export default {
     }
 
     .page-information-O-info p{
+        font-size: 12px;
+    }
+    .page-information-O-info li{
+        font-size: 12px;
+    }
+
+    .page-information-O-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-information-O-photo{
+        height: 150px;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 383px){
+    .info-2 span{
+        font-size: 13px;
+    }
+    .page-information-O-label-info p span{
+        font-size: 12px;
+    }
+    .page-information-O-label-info p{
+        font-size: 11px;
+    }
+    .page-information-O-info h2{
         font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    .page-information-O-info p{
+        font-size: 12px;
+    }
+    .page-information-O-info li{
+        font-size: 12px;
     }
 }
 
-@media screen and (min-width: 383px) and (max-width: 480px){
-    .page-information-O-label{
-        height: 350px;
+@media screen and (min-width: 481px) and (max-width: 700px){
+    .header-box-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-@media screen and (min-width: 481px) and (max-width: 600px){
-   .page-information-O{
+    .label-box-2{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -313,8 +463,10 @@ export default {
         height: 8px;
     }
     .page-information-O-label{
-        height: 230px;
+        height: 240px;
         width: 90%;
+        position: relative;
+        z-index: -1;
     }
     .page-information-O-label-content{
         display: flex;
@@ -376,7 +528,7 @@ export default {
         margin-top: 67px;
     }
     .page-information-O-info h2{
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 10px;
         margin-top: 5px;
     }
@@ -386,11 +538,25 @@ export default {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px){
-   .page-information-O{
+@media screen and (min-width: 601px) and (max-width: 700px){
+    .header-box-2{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1150px){
+    .header-box-2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .label-box-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .container-information-O{
         width: 80%;
@@ -402,8 +568,8 @@ export default {
         height: 8px;
     }
     .page-information-O-label{
-        height: 240px;
-        width: 90%;
+        height: 260px;
+        width: 80%;
     }
     .page-information-O-label-content{
         display: flex;
@@ -426,10 +592,10 @@ export default {
         align-items: center;
     }
     .info-2 span{
-        font-size: 20px;
+        font-size: 22px;
     }
     .page-information-O-label-info p span{
-        font-size: 18px;
+        font-size: 20px;
     }
     .page-information-O-label-info p{
         font-size: 16px;
@@ -465,7 +631,7 @@ export default {
         margin-top: 67px;
     }
     .page-information-O-info h2{
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 10px;
         margin-top: 5px;
     }
@@ -487,13 +653,16 @@ export default {
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1150px){
-    .page-information-O-label-border-between-2{
-        margin-right: 10px;
+@media screen and (min-width: 481px) and (max-width: 1100px){
+    .page-information-O-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .timetable{
-        position: relative;
-        right: 15px;
+    .page-information-O-photo{
+        height: 250px;
+        margin-left: 0px;
+        margin-top: 50px;
     }
 }
 

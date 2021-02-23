@@ -4,7 +4,7 @@
             <div class="page-footer-2-border"></div>
             <div class="page-footer-2-1">
                 <div class="page-footer-2-logo">
-                    <img class="logo-footer-2" src="~@/assets/logo_stopka.png/">
+                    <img class="logo-footer-2" width="191" height="24" alt="logo MMKowalczyk" src="~@/assets/logo_stopka.png/">
                 </div>
                 <div class="page-footer-2-nav">
                     <div class="page-footer-2-nav-2">
@@ -57,7 +57,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 118px;
+    margin-top: 70px;
 }
 
 .page-footer-2-border{
@@ -72,8 +72,9 @@ export default {
 }
 
 .logo-footer-2{
-    width: 191px;
-    height: 24px;
+    /* width: 191px;
+    height: 24px; */
+    aspect-ratio: attr(width) / attr(height);
 }
 
 .page-footer-2-nav{
@@ -104,6 +105,7 @@ export default {
 
 .page-footer-2-nav-menu li{
     list-style-type: none;
+    margin-bottom: 6px;
 }
 
 .page-footer-2-nav-menu a{

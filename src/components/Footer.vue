@@ -15,7 +15,7 @@
             <div class="page-footer-border"></div>
             <div class="page-footer-1">
                 <div class="page-footer-logo">
-                    <img class="logo-footer" src="~@/assets/logo_stopka.png/">
+                    <img class="logo-footer" width="191" height="24" alt="logo MMKowalczyk" src="~@/assets/logo_stopka.png/">
                 </div>
                 <div class="page-footer-nav">
                     <div class="page-footer-nav-2">
@@ -59,7 +59,7 @@ export default {
 
 .container-footer{
     width: 100%;
-    height: 670px;
+    height: 650px;
     margin: 0 auto;
     background-color: #FAF8F6;
 }
@@ -113,8 +113,9 @@ export default {
 }
 
 .logo-footer{
-    width: 191px;
-    height: 24px;
+    /* width: 191px;
+    height: 24px; */
+    aspect-ratio: attr(width) / attr(height);
 }
 
 .page-footer-nav{
@@ -145,6 +146,7 @@ export default {
 
 .page-footer-nav-menu li{
     list-style-type: none;
+    margin-bottom: 6px;
 }
 
 .page-footer-nav-menu a{
@@ -156,7 +158,7 @@ export default {
 
 @media screen and (max-width: 320px){
     .container-footer{
-        height: 470px;
+        height: 500px;
     }
     .page-footer-names{
         display: flex;
@@ -208,7 +210,7 @@ export default {
         overflow-x: hidden;
     }
     .container-footer{
-        height: 490px;
+        height: 520px;
     }
     .page-footer-names{
         display: flex;
@@ -261,7 +263,7 @@ export default {
 
 @media screen and (min-width: 381px) and (max-width: 480px){
     .container-footer{
-        height: 530px;
+        height: 560px;
     }
     .page-footer-names{
         display: flex;
@@ -305,7 +307,7 @@ export default {
 
 @media screen and (min-width: 481px) and (max-width: 600px){
     .container-footer{
-        height: 570px;
+        height: 590px;
     }
     .page-footer-names{
         display: flex;
@@ -360,6 +362,9 @@ export default {
         flex-direction: column;
         margin-top: 15px;
         width: 80vw;
+    }
+    .container-footer{
+        height: 690px;
     }
 }
 

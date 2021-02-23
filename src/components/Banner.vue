@@ -5,7 +5,7 @@
                 <div>
                     <transition-group name="fade" tag="div">
                     <div v-for="index in [currentIndex]" :key="index">
-                        <img class="photo" :src="currentImg" />
+                        <img class="photo" alt="slider zdjęć ukazujący gabinet" :src="currentImg" />
                     </div>
                     </transition-group>
                     <a class="prev" @click="prev" href="#">&#10094;&#10094; </a>
@@ -43,9 +43,11 @@ export default {
   data() {
     return {
       images: [
-          require("@/assets/slajd1.png"),
-          require("@/assets/slajd2.png"),
-          require("@/assets/slajd3.png")
+          require("@/assets/S1.jpg"),
+          require("@/assets/S2.jpg"),
+          require("@/assets/S3.jpg"),
+          require("@/assets/S4.jpg"),
+          require("@/assets/S5.jpg"),
       ],
       timer: null,
       currentIndex: 0
@@ -58,7 +60,7 @@ export default {
 
   methods: {
     startSlide: function() {
-      this.timer = setInterval(this.next, 4000);
+      this.timer = setInterval(this.next, 5000);
     },
 
     next: function() {
@@ -100,15 +102,18 @@ body {
 }
 
 .photo{
-  height: 50vw;
+    height: auto;
+    width: 100%;
+    position: relative;
 }
 
 .slider{
     width: 100%;
+    height: auto;
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: all 0.9s ease;
+  transition: all 1.5s ease;
   overflow: hidden;
   visibility: visible;
   position: absolute;
@@ -120,11 +125,6 @@ body {
   visibility: hidden;
   width:100%;
   opacity: 0;
-}
-
-img {
-  height:702px;
-  width:100%
 }
 
 .prev, .next {
@@ -139,6 +139,7 @@ img {
   transition: 0.7s ease;
   text-decoration: none;
   user-select: none;
+  z-index: 100;
 }
 
 .next {
@@ -159,12 +160,13 @@ img {
     width: 75vw;
     height: 160px;
     position: absolute;
-    top: 83%;
+    top: 85%;
     left: 0;
     background-color: #fff;
     -webkit-box-shadow: 5px 5px 20px -15px #000000;
     box-shadow: 5px 5px 20px -15px #000000;
     border-radius: 0 10px 0 0;
+    z-index: 100;
 }
 
 .label-content-baner{
@@ -246,12 +248,21 @@ img {
     overflow-x: hidden;
   }
   .slider-banner{
-    height: 80vw;
+    /* height: 66.6vw; */
+    position: relative;
+    z-index: -1;
   }
 
   .photo{
-    height: 80vw;
+    /* height: 66.6vw; */
+    position: relative;
+    z-index: -1;
   }
+
+  .prev, .next {
+    display: none;
+  }
+
 
   .label-banner{
     width: 100%;
@@ -302,12 +313,21 @@ img {
 
 @media screen and (min-width: 425px) and (max-width: 480px){
   .slider-banner{
-    height: 80vw;
+    /* height: 66.6vw; */
+    position: relative;
+    z-index: -1;
   }
 
   .photo{
-    height: 80vw;
+    /* height: 66.6vw; */
+    position: relative;
+    z-index: -1;
   }
+
+  .prev, .next {
+    display: none;
+  }
+
 
   .label-banner{
     width: 100%;
@@ -358,12 +378,21 @@ img {
 
 @media screen and (min-width: 481px) and (max-width: 600px){
   .slider-banner{
-    height: 80vw;
+    /* height: 66.6vw; */
+    position: relative;
+    z-index: -1;
   }
 
   .photo{
-    height: 80vw;
+    /* height: 66.6vw; */
+    position: relative;
+    z-index: -1;
   }
+
+  .prev, .next {
+    display: none;
+  }
+
 
   .label-banner{
     width: 90%;
@@ -416,13 +445,13 @@ img {
 
 
 @media screen and (min-width: 601px) and (max-width: 769px){
-  .slider-banner{
-    height: 80vw;
+  /* .slider-banner{
+    height: 66.6vw;
   }
 
   .photo{
-    height: 80vw;
-  }
+    height: 66.6vw;
+  } */
 
   .label-banner{
     width: 85%;
@@ -469,13 +498,13 @@ img {
 }
 
 @media screen and (min-width: 770px) and (max-width: 1000px){
-  .slider-banner{
-    height: 70vw;
+  /* .slider-banner{
+    height: 66.6vw;
   }
 
   .photo{
-    height: 70vw;
-  }
+    height: 66.6vw;
+  } */
 
   .label-banner{
     width: 80%;
@@ -521,16 +550,15 @@ img {
     width: 100%;
   }
 }
-
-@media screen and (min-width: 900px) and (max-width: 1100px){
+ /* @media screen and (min-width: 900px) and (max-width: 1100px){
   .slider-banner{
-    height: 60vw;
+    height: 66vw;
   }
 
   .photo{
-    height: 60vw;
+    height: 66vw;
   }
-}
+ } */
 
 
 

@@ -23,25 +23,72 @@
                     <div class="label-element">
                         <div class="phone-4"><font-awesome-icon icon="phone" :transform="{ rotate: 100 }"/></div>
                         <h2>KONTAKT</h2>
-                        <p>tel. 000 000 000</p>
+                        <p>tel. 604 540 510</p>
+                        <!-- <p>mmkowalczyk25@gmail.com</p> -->
                     </div>
                 </div>
             </div>
-            <div class="page-information-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.7345748455587!2d22.54161747866655!3d51.251505817199394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722570171deb341%3A0x20e8df717b8e2017!2sStanis%C5%82awa%20Leszczy%C5%84skiego%2025%2C%2020-068%20Lublin!5e0!3m2!1spl!2spl!4v1610194548186!5m2!1spl!2spl" width="1080" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <!-- <div class="page-information-C-registration">
+               <div class="button-C"><button class="btn-mydr-pp" data-doctor="małgorzatakowalczyk" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbG10eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY">Rejestracja Online</button></div>
+            </div> -->
+            <div class="mapbox">
+                <MglMap :mapboxGl="mapbox-gl" :accessToken="accessToken" :mapStyle.sync="mapStyle" @load="onMapLoaded"/>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {
 
-}
+
+    //ZAPISY ONLINE
+
+    // const mydrScript = document.getElementByTagName('script')[0];
+    // const js = document.createElement('script');
+    // js.src = "https://mydr.pl/static/mydr-pp.min.js";
+    // mydrScript.parentNode.insertBefore(js, mydrScript);
+
+    // js.onload = () => {
+    //     const PatientsPlugin = new window.PatientsPlugin;
+    //     PatientsPlugin.init({
+    //         app: 'https://mydr.pl/patients_plugin',
+    //         plugin: 'https://mydr.pl/static',
+    //     });
+    // };
+
+
+    import Mapbox from "mapbox-gl";
+    import { MglMap } from "vue-mapbox";
+
+    export default {
+    components: {
+        MglMap
+    },
+    data() {
+        return {
+        accessToken: 'pk.eyJ1Ijoia293YWxwIiwiYSI6ImNrbDd4NWliNjA2bjMyd29iN29iZDU4czMifQ._BuE0B5cP3FIQXdPH5qmQw',
+        mapStyle: 'mapbox://styles/kowalp/ckl7xgckq0qr617o29ruc0ymz' // your map style
+        };
+    },
+
+    created() {
+        // We need to set mapbox-gl library here in order to use it in template
+        this.mapbox = Mapbox;
+    }
+    };
+
+
 </script>
 
 
 <style>
+/* #map {
+    height: 500px;
+} */
+.mapbox{
+    height: 400px;
+    width: 100%;
+}
 
 .container-information-C{
     width: 80vw;
@@ -82,6 +129,7 @@ export default {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .label-element{
@@ -119,6 +167,25 @@ export default {
     color: #C7BA9F;
     font-size: 20px;
 }
+
+/* .page-information-C-registraton{
+    align-items: center;
+    text-align: center;
+
+}
+.button-C a{
+    text-decoration: none;
+}
+
+.button-C{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    background-color: khaki;
+    margin-bottom: 70px;
+} */
 
 @media screen and (max-width: 480px){
     body{

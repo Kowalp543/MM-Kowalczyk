@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MMKowalczyk</title>
+    <meta name="description" content="Strona gabinetu lekarskiego MMKowalczyk. Okulista i diabetolog. Dobór okularów, okulistyka dziecięca, cukrzyca typu pierwszego i drugiego, zakładanie pomp insulinowych. Zarejestruj się na wizytę. Zapraszamy!">
+    <meta name="keywords" content="okulista, diabetolog, gabinet lekarski, lekarz, doktor, Małgorzata Kowalczyk, Mariusz Kowalczyk, okulary, dzieci, okulista dziecięcy, pompy insulinowe, cukrzyca, cukrzyca typu pierwszego, cukrzyca typu drugiego, lublin, lubelskie, lubelszczyzna, leszczyńskiego, active residence, kontakt, rejestracja, godziny pracy, telefon, adres, specjalista chorób oczu, specjalista chorób wewnętrznych, diabetologia, okulistyka, zez">
+    <meta name="author" content="Piotr Kowalczyk">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Trirong:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- MapBox -->
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/vue-mapbox@latest/dist/vue-mapbox.css" rel="stylesheet"/>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@latest/dist/vue.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue-mapbox@latest/dist/vue-mapbox.min.js"></script>
+
+
   </head>
-  <body>
+  <body onpagehide="exit()">
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <!-- <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong> -->
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="app" onpagehide="exitFunction"></div>
+    <a class="skip-link" href="#main">Skip to main</a>
   </body>
+  <style>
+    .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+  </style>
+
+  <script>
+
+function exit(){
+
+  if ('onpagehide' in window) {
+  //if(window.onpagehide || window.onpagehide === null){
+  window.addEventListener('pagehide', exitFunction, false);
+  } else {
+  window.addEventListener('unload', exitFunction, false);
+  }
+}
+
+  </script>
 </html>

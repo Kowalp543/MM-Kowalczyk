@@ -14,7 +14,9 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "core-js": "^3.6.5",
+    "mapbox-gl": "^2.1.1",
     "vue": "^2.6.11",
+    "vue-mapbox": "^0.4.1",
     "vue-router": "^3.4.9",
     "vuetify": "^2.4.4"
   },

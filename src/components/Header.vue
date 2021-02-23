@@ -1,13 +1,7 @@
 <template>
     <header class = "page-header">
         <div class="container">
-            <router-link to="/">
-                <a href="" class="page-logo">
-                    <img class="logo" src="~@/assets/logo.png/">
-                </a>
-            </router-link>
-
-
+            <router-link to="/"><img class="logo" width= "160" height= "94" alt="logo MMKowalczyk" src="~@/assets/logo.png/"></router-link>
             <div class="header-right">
                 <div class="page-contact">
                     <p><font-awesome-icon icon="phone-volume" pull="left" :transform="{ rotate: -35 }"/>Rejestracja telefoniczna <span>604 540 510</span></p>
@@ -67,8 +61,9 @@ body {
 }
 
 .logo{
-    width: 160px;
-    height: 94px;
+    /* width: 160px;
+    height: 94px; */
+    aspect-ratio: attr(width) / attr(height);
 }
 
 .header-right{

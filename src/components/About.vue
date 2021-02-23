@@ -89,7 +89,7 @@ export default {
 }
 
 .button p{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #C7BA9F;
