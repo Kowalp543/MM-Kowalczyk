@@ -1,14 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Header from '@/components/Header.vue';
-import Banner from '@/components/Banner.vue';
-import About from '@/components/About.vue';
-import Specialty from '@/components/Specialty.vue';
-import Footer from '@/components/Footer.vue';
-import Footer2 from '@/components/Footer-2.vue';
-import InformationO from '@/components/Information-O.vue';
-import InformationD from '@/components/Information-D.vue';
-import InformationC from '@/components/Information-C.vue';
 
 Vue.use(Router);
 
@@ -19,40 +10,22 @@ const RouterVue = new Router({
     {
       path: '/',
       name: 'home',
-      components: {
-          default: Header,
-          banner: Banner,
-          about: About,
-          specialty: Specialty,
-          footer: Footer,
-      }
+      component: () => import(/* webpackChunkName: "home" */'@/views/HomeView')
     },
     {
       path: '/okulista',
       name: 'okulista',
-      components: {
-          default: Header,
-          informationO: InformationO,
-          footer2: Footer2,
-      }
+      component: () => import(/* webpackChunkName: "oculist" */'@/views/OculistView')
     },
     {
       path: '/diabetolog',
       name: 'diabetolog',
-      components: {
-          default: Header,
-          informationO: InformationD,
-          footer2: Footer2,
-      }
+      component: () => import(/* webpackChunkName: "diabetologist" */'@/views/DiabetologistView')
     },
     {
       path: '/kontakt',
       name: 'kontakt',
-      components: {
-          default: Header,
-          informationO: InformationC,
-          footer2: Footer2,
-      }
+      component: () => import(/* webpackChunkName: "contact" */'@/views/ContactView')
     }
   ]
 });

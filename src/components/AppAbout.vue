@@ -52,7 +52,7 @@ export default {
 }
 
 .page-about-border{
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
     height: 8px;
     width: 84px;
 }
@@ -78,7 +78,7 @@ export default {
 .button{
     height: 48px;
     width: 160px;
-    border: 2px solid #C7BA9F;
+    border: 2px solid #e4bc9b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ export default {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #C7BA9F;
+    color: #e4bc9b;
 }
 
 .page-about-button a{

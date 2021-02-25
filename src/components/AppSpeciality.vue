@@ -8,14 +8,14 @@
             <div class="page-specialty-box">
                 <div class="page-specialty-box-1">
                     <div class="specialty">
-                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Dobór okularów" src="~@/assets/W1.jpg/"></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Dobór okularów" src=""></div>
                         <div class="specialty-content">
                             <p>DOBÓR OKULARÓW</p>
                         </div>
                         <div class="specialty-border"></div>
                     </div>
                     <div class="specialty">
-                        <div class="specialty-photo"></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Okulistyka dziecięca" src=""></div>
                         <div class="specialty-content">
                             <p>OKULISTYKA DZIECIĘCA</p>
                         </div>
@@ -27,7 +27,7 @@
                         <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Zakładanie pomp insulinowych" src="~@/assets/W3.jpg/"></div>
                         <div class="specialty-content">
                             <p>ZAKŁADANIE POMP INSULINOWYCH</p>
-                        </div>  
+                        </div>
                         <div class="specialty-border"></div>
                     </div>
                     <div class="specialty">
@@ -81,7 +81,7 @@ export default {
 .page-specialty-border{
     height: 8px;
     width: 84px;
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
 }
 
 .page-specialty-box, .page-specialty-box-1, .page-specialty-box-2{
@@ -131,7 +131,7 @@ export default {
 .specialty-border{
     height: 8px;
     width: 255px;
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
 }
 
 .widget{

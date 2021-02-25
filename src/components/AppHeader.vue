@@ -85,7 +85,7 @@ body {
 }
 
 .page-contact span{
-    color: #C7BA9F;
+    color: #e4bc9b;
     margin-left: 10px;
 }
 
@@ -145,7 +145,7 @@ body{
 
 .phone-nav-button {
     border-radius: 5px;
-    border: 2px solid #C7BA9F;
+    border: 2px solid #e4bc9b;
     color: #000;
     background: #FAF8F6;
     -webkit-box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
@@ -194,7 +194,7 @@ body{
   border-radius: 5px;
   overflow: hidden;
 text-decoration: none;
-border: 2px solid #C7BA9F;
+border: 2px solid #e4bc9b;
 }
 
 .phone-nav-menu ul li a{

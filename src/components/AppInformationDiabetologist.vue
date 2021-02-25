@@ -110,7 +110,7 @@ export default {
 }
 
 .page-information-D-border{
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
     height: 8px;
     width: 84px;
     margin-top: 10px;
@@ -119,7 +119,7 @@ export default {
 .page-information-D-label{
     height: 250px;
     width: 100%;
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
     margin-top: 36px;
     -webkit-box-shadow: 0px 5px 20px -9px rgba(0,0,0,1);
     -moz-box-shadow: 0px 5px 20px -9px rgba(0,0,0,1);
@@ -229,7 +229,7 @@ export default {
     height: 250px;
     margin-left: 15px;
     margin-top: 0px;
-    border: 2px solid #C7BA9F;
+    border: 2px solid #e4bc9b;
     border-radius: 3px;
     -webkit-box-shadow: 0px 5px 18px -9px rgba(0,0,0,1);
     -moz-box-shadow: 0px 5px 18px -9px rgba(0,0,0,1);

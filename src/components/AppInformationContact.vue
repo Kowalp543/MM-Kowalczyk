@@ -116,20 +116,20 @@
 .page-information-C-border{
     height: 8px;
     width: 84px;
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
     margin-top: 10px;
 }
 
 .page-information-C-label{
     width: 80vw;
-    margin-top: 42px;
+    margin-top: 80px;
 }
 
 .page-information-C-label-content{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .label-element{
@@ -154,18 +154,18 @@
 }
 
 .location-2{
-    color: #C7BA9F;
-    font-size: 23px;
+    color: #e4bc9b;
+    font-size: 25px;
 }
 
 .clock-2{
-    color: #C7BA9F;
-    font-size: 23px;
+    color: #e4bc9b;
+    font-size: 25px;
 }
 
 .phone-4{
-    color: #C7BA9F;
-    font-size: 20px;
+    color: #e4bc9b;
+    font-size: 25px;
 }
 
 /* .page-information-C-registraton{

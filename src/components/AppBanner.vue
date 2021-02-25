@@ -211,7 +211,7 @@ body {
 
 .label-info span{
     font-size: 20px;
-    color:  #C7BA9F;
+    color:  #e4bc9b;
     margin-right: 10px;
 }
 
@@ -231,13 +231,13 @@ body {
 .label-banner-border{
     width: 75vw;
     height: 8px;
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 .label-banner-border-between{
-     border-right: 3px dashed #C7BA9F;
+     border-right: 3px dashed #e4bc9b;
      margin-top: 35px;
      margin-bottom: 5px;
 }

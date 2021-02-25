@@ -149,7 +149,7 @@ export default {
 }
 
 .page-information-O-border{
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
     height: 8px;
     width: 84px;
     margin-top: 10px;
@@ -158,7 +158,7 @@ export default {
 .page-information-O-label{
     height: 145px;
     width: 100%;
-    background-color: #C7BA9F;
+    background-color: #e4bc9b;
     margin-top: 36px;
     -webkit-box-shadow: 0px 5px 20px -9px rgba(0,0,0,1);
     -moz-box-shadow: 0px 5px 20px -9px rgba(0,0,0,1);
@@ -301,7 +301,7 @@ export default {
 
 .page-information-O-info ul>li>ul>li{
     list-style-type: disc;
-    color: #C7BA9F;
+    color: #e4bc9b;
 }
 
 @media screen and (max-width: 480px){
