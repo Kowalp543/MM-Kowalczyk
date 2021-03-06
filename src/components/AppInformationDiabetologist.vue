@@ -237,7 +237,7 @@ export default {
 }
 
 .page-information-D-info h2{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -248,12 +248,14 @@ export default {
     font-size: 16px;
     margin-top: 2px;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .page-information-D-info li{
     list-style-type: none;
     margin-bottom: 10px;
     list-style-type: disc;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 400px){
