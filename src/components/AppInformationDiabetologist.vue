@@ -55,7 +55,7 @@
                     </ul>
                 </div>
                 <div>
-                    <img class="page-information-D-photo" alt="Małgorzata Kowalczyk" src="~@/assets/D2.jpg/" >
+                    <img class="page-information-D-photo" alt="Mariusz Kowalczyk" src="~@/assets/D2.webp" >
                 </div>
             </div>
         </div>

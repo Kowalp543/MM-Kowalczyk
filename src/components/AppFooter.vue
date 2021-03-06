@@ -15,7 +15,7 @@
             <div class="page-footer-border"></div>
             <div class="page-footer-1">
                 <div class="page-footer-logo">
-                    <img class="logo-footer" width="191" height="24" alt="logo MMKowalczyk" src="~@/assets/logo_stopka.png/">
+                    <img class="logo-footer" width="191" height="24" alt="logo MMKowalczyk" src="~@/assets/logo_stopka.webp">
                 </div>
                 <div class="page-footer-nav">
                     <div class="page-footer-nav-2">

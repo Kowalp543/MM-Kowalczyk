@@ -24,14 +24,14 @@
                 </div>
                 <div class="page-specialty-box-2">
                     <div class="specialty">
-                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Zakładanie pomp insulinowych" src="~@/assets/W3.jpg/"></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Zakładanie pomp insulinowych" src="~@/assets/W3.webp"></div>
                         <div class="specialty-content">
                             <p>ZAKŁADANIE POMP INSULINOWYCH</p>
                         </div>
                         <div class="specialty-border"></div>
                     </div>
                     <div class="specialty">
-                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Cukrzyca typu pierwszego i drugiego" src="~@/assets/W4.jpg/"></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Cukrzyca typu pierwszego i drugiego" src="~@/assets/W4.webp"></div>
                         <div class="specialty-content">
                             <p>CUKRZYCA TYPU PIERWSZEGO I DRUGIEGO</p>
                         </div>
