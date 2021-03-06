@@ -43,11 +43,11 @@ export default {
   data() {
     return {
       images: [
-          require("@/assets/S1.jpg"),
-          require("@/assets/S2.jpg"),
-          require("@/assets/S3.jpg"),
-          require("@/assets/S4.jpg"),
-          require("@/assets/S5.jpg"),
+          require("@/assets/S1.webp"),
+          require("@/assets/S2.webp"),
+          require("@/assets/S3.webp"),
+          require("@/assets/S4.webp"),
+          require("@/assets/S5.webp"),
       ],
       timer: null,
       currentIndex: 0
