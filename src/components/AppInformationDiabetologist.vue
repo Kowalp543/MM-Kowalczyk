@@ -226,10 +226,10 @@ export default {
 }
 
 .page-information-D-photo{
-    height: 250px;
+    height: 243px;
     margin-left: 15px;
     margin-top: 0px;
-    border: 2px solid #e4bc9b;
+    border: 2px solid #C7BA9F;
     border-radius: 3px;
     -webkit-box-shadow: 0px 5px 18px -9px rgba(0,0,0,1);
     -moz-box-shadow: 0px 5px 18px -9px rgba(0,0,0,1);

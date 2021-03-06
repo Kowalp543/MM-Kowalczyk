@@ -27,7 +27,10 @@ const RouterVue = new Router({
       name: 'kontakt',
       component: () => import(/* webpackChunkName: "contact" */'@/views/ContactView')
     }
-  ]
+  ],
+  // scrollBehavior (to, from, savedPosition){
+  //       return { x: 0, y: 0 }
+  // },
 });
 
 export default RouterVue;

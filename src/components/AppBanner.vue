@@ -15,13 +15,13 @@
                     <div class="label-content-baner">
                         <div class="label-info">
                             <div class="phone"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>KONTAKT</div>
-                            <p>tel.604 540 510</p>
+                            <p>tel. 604 540 510</p>
                         </div>
                         <div class="label-banner-border-between"></div>
                         <div class="label-info">
                             <div class="clock"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
-                            <p>Pn-Pt: 16:00-20:00</p>
-                            <p>Sob: 12:00-16:00</p>
+                            <p>Podane na podstronie</p>
+                            <p>wybranego lekarza</p>
                         </div>
                         <div class="label-banner-border-between"></div>
                         <div class="label-info">

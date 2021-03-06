@@ -9,7 +9,7 @@
 <script>
 import AppHeader from '@/components/AppHeader'
 import AppInformationContact from '@/components/AppInformationContact'
-import AppSecondaryFooter from '@/components/AppFooter'
+import AppSecondaryFooter from '@/components/AppSecondaryFooter'
 
 export default {
   components: {

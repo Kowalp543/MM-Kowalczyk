@@ -240,7 +240,7 @@ export default {
     }
 }
 
-@media screen and (min-width: 770px) and (max-width: 1150px){
+@media screen and (min-width: 769px) and (max-width: 1150px){
     .page-specialty-box{
         display: flex;
         flex-direction: column;

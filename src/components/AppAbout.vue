@@ -6,11 +6,15 @@
             </div>
             <div class="page-about-border"> </div>
             <div class="page-about-content">
-                <p>Szanowni Państwo witamy na stronie naszego gabinetu. Możecie Państwo
-                liczyć na profesjonalne porady z zakresu okulistyki, ze szczególnym
-                uwzględnieniem problematyki okulistyki wieku dziecięcego. Zapewniamy
-                też Państwu porady z zakresu diabetologii, w tym leczenie cukrzycy typu I,
-                typu II oraz problemów związanych z cukrzycą w ciąży.</p>
+                <p>Gabinet lekarski M/M Kowalczyk oferuje pacjentom kompleksową opiekę medyczną
+                w zakresie okulistyki i diabetologii. Nasze wieloletnie doświadczenie
+                specjalistyczne i kliniczne pozwala na zapewnienie pacjentom profesjonalnej porady.
+                W ramach poradni okulistycznej szczególną opieką otaczane są dzieci z problemami chorób
+                oczu. W poradni diabetologicznej znajdą wsparcie dorośli pacjenci z cukrzycą, w tym ci
+                leczeni za pomocą osobistych pomp insulinowych oraz kobiety z cukrzycą ciążową.
+                Pacjenci z otyłością również mogą liczyć na poradę. <br><br>
+                Gabinet lekarski jest dogodnie dla pacjenta zlokalizowany w centrum miasta.
+                Obok gabinetu dostępny jest parking miejski (Strefa B).</p>
             </div>
             <div class="page-about-button">
                 <router-link to="okulista"><div class="button"><p>OKULISTA</p></div></router-link>
@@ -58,7 +62,7 @@ export default {
 }
 
 .page-about-content {
-    width: 50vw;
+    width: 65vw;
 }
 
 .page-about-content p{
@@ -72,7 +76,7 @@ export default {
     margin-top: 64px;
     display: flex;
     justify-content: space-evenly;
-    width: 50vw;
+    width: 40vw;
 }
 
 .button{
@@ -239,5 +243,11 @@ export default {
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1100px){
+    .page-about-button{
+        width: 70%;
+        margin-top: 40px;
+    }
+}
 
 </style>

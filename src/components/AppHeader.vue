@@ -118,7 +118,7 @@ body {
 }
 
 .page-nav-list a:hover{
-    color: #A0917A;
+    color: #e4bc9b;
 }
 
 @media screen and (max-width: 600px){

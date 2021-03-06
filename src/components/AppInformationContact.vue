@@ -17,8 +17,8 @@
                     <div class="label-element">
                         <div class="clock-2"><font-awesome-icon :icon="['far', 'clock']" /></div>
                         <h2>GODZINY PRACY</h2>
-                        <p>Pn-Pt: 16:00-20:00</p>
-                        <p>Sob: 12:00-16:00</p>
+                        <p>Podane na podstronie</p>
+                        <p>wybranego lekarza</p>
                     </div>
                     <div class="label-element">
                         <div class="phone-4"><font-awesome-icon icon="phone" :transform="{ rotate: 100 }"/></div>
