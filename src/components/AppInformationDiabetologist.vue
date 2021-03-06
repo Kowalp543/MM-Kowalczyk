@@ -159,7 +159,7 @@ export default {
 }
 
 .page-information-D-label-info p span{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 100;
 }
 
