@@ -39,11 +39,33 @@
                     </div>
                 </div>
             </div>
+
+            <div class="page-speciality-registration">
+                <button class="btn-mydr-pp" data-doctor="" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbGl0eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY"></button>
+            </div>
+
         </div>
     </div>
 </template>
 
 <script>
+
+
+    const mydrScript = document.getElementsByTagName('script')[0];
+    const js = document.createElement('script');
+    js.src = "https://mydr.pl/static/mydr-pp.min.js";
+    mydrScript.parentNode.insertBefore(js, mydrScript);
+
+    js.onload = () => {
+        const PatientsPlugin = new window.PatientsPlugin;
+        PatientsPlugin.init({
+            app: 'https://mydr.pl/patients_plugin',
+            plugin: 'https://mydr.pl/static',
+        });
+    };
+
+
+
 export default {
 
 }
@@ -141,6 +163,14 @@ export default {
     aspect-ratio: attr(width) / attr(height);
 
 }
+
+.page-speciality-registration{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 118px;
+}
+
 
 @media screen and (max-width: 320px){
     .page-specialty-box, .page-specialty-box-1, .page-specialty-box-2{

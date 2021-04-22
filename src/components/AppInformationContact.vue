@@ -28,9 +28,9 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="page-information-C-registration">
-               <div class="button-C"><button class="btn-mydr-pp" data-doctor="małgorzatakowalczyk" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbG10eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY">Rejestracja Online</button></div>
-            </div> -->
+            <div class="page-information-C-registration">
+                <button class="btn-mydr-pp" data-doctor="" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbGl0eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY"></button>
+            </div>
             <div class="mapbox">
                 <MglMap :mapboxGl="mapbox-gl" :accessToken="accessToken" :mapStyle.sync="mapStyle" @load="onMapLoaded"/>
             </div>
@@ -40,21 +40,19 @@
 
 <script>
 
+    const mydrScript = document.getElementsByTagName('script')[0];
+    const js = document.createElement('script');
+    js.src = "https://mydr.pl/static/mydr-pp.min.js";
+    mydrScript.parentNode.insertBefore(js, mydrScript);
 
-    //ZAPISY ONLINE
+    js.onload = () => {
+        const PatientsPlugin = new window.PatientsPlugin;
+        PatientsPlugin.init({
+            app: 'https://mydr.pl/patients_plugin',
+            plugin: 'https://mydr.pl/static',
+        });
+    };
 
-    // const mydrScript = document.getElementByTagName('script')[0];
-    // const js = document.createElement('script');
-    // js.src = "https://mydr.pl/static/mydr-pp.min.js";
-    // mydrScript.parentNode.insertBefore(js, mydrScript);
-
-    // js.onload = () => {
-    //     const PatientsPlugin = new window.PatientsPlugin;
-    //     PatientsPlugin.init({
-    //         app: 'https://mydr.pl/patients_plugin',
-    //         plugin: 'https://mydr.pl/static',
-    //     });
-    // };
 
 
     import Mapbox from "mapbox-gl";
@@ -168,24 +166,13 @@
     font-size: 25px;
 }
 
-/* .page-information-C-registraton{
+.page-information-C-registration{
     align-items: center;
     text-align: center;
-
-}
-.button-C a{
-    text-decoration: none;
+    width: 100%;
+    margin-bottom: 80px;
 }
 
-.button-C{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 200px;
-    background-color: khaki;
-    margin-bottom: 70px;
-} */
 
 @media screen and (max-width: 480px){
     body{

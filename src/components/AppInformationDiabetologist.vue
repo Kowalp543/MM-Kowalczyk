@@ -58,11 +58,31 @@
                     <img class="page-information-D-photo" alt="Mariusz Kowalczyk" src="~@/assets/D2.webp" >
                 </div>
             </div>
+            <div class="page-information-D-registration">
+                <button class="btn-mydr-pp" data-doctor="" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbGl0eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY"></button>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+
+
+    const mydrScript = document.getElementsByTagName('script')[0];
+    const js = document.createElement('script');
+    js.src = "https://mydr.pl/static/mydr-pp.min.js";
+    mydrScript.parentNode.insertBefore(js, mydrScript);
+
+    js.onload = () => {
+        const PatientsPlugin = new window.PatientsPlugin;
+        PatientsPlugin.init({
+            app: 'https://mydr.pl/patients_plugin',
+            plugin: 'https://mydr.pl/static',
+        });
+    };
+
+
+
 export default {
 
 }
@@ -257,6 +277,16 @@ export default {
     list-style-type: disc;
     font-weight: 600;
 }
+
+.page-information-D-registration{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+
 
 @media screen and (max-width: 400px){
     body{
