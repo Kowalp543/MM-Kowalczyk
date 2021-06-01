@@ -123,9 +123,9 @@ body {
 }
 
 @media screen and (max-width: 600px){
-/* body{
+body{
     overflow-x: hidden;
-} */
+}
 .container{
     width: 100%;
 }

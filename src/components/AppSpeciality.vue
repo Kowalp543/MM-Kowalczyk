@@ -8,14 +8,14 @@
             <div class="page-specialty-box">
                 <div class="page-specialty-box-1">
                     <div class="specialty">
-                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Dobór okularów" src=""></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Dobór okularów" src="~@/assets/W1.webp"></div>
                         <div class="specialty-content">
                             <p>DOBÓR OKULARÓW</p>
                         </div>
                         <div class="specialty-border"></div>
                     </div>
                     <div class="specialty">
-                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Okulistyka dziecięca" src=""></div>
+                        <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Okulistyka dziecięca" src="~@/assets/W2.webp"></div>
                         <div class="specialty-content">
                             <p>OKULISTYKA DZIECIĘCA</p>
                         </div>
@@ -26,7 +26,7 @@
                     <div class="specialty">
                         <div class="specialty-photo"><img class="widget" width="255" height="312" alt="Zakładanie pomp insulinowych" src="~@/assets/W3.webp"></div>
                         <div class="specialty-content">
-                            <p>ZAKŁADANIE POMP INSULINOWYCH</p>
+                            <p>OSOBISTE POMPY INSULINOWE</p>
                         </div>
                         <div class="specialty-border"></div>
                     </div>
