@@ -23,6 +23,11 @@ const RouterVue = new Router({
       component: () => import(/* webpackChunkName: "diabetologist" */'@/views/DiabetologistView')
     },
     {
+      path: '/cennik',
+      name: 'cennik',
+      component: () => import(/* webpackChunkName: "priceList" */'@/views/PriceListView')
+    },
+    {
       path: '/kontakt',
       name: 'kontakt',
       component: () => import(/* webpackChunkName: "contact" */'@/views/ContactView')

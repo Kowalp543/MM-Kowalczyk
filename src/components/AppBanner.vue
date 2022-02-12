@@ -15,8 +15,7 @@
                     <div class="label-content-baner">
                         <div class="label-info">
                             <div class="phone"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>KONTAKT</div>
-                            <p>tel. 604 540 510</p>
-                        </div>
+                            <a href="tel: +48604540510"><p>604 540 510</p></a>                        </div>
                         <div class="label-banner-border-between"></div>
                         <div class="label-info">
                             <div class="clock"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
@@ -182,6 +181,10 @@ body {
     align-items: flex-start;
 }
 
+.label-info a{
+  text-decoration: none;
+}
+
 .phone{
     font-size: 20px;
     font-weight: 600;
@@ -225,6 +228,7 @@ body {
     font-size: 16px;
     margin-bottom: 2px;
     margin-top: 2px;
+    color: #000000;
 }
 
 

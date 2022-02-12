@@ -16,13 +16,14 @@
                         </div>
                         <div class="page-footer-2-nav-contact">
                             <span>Kontakt</span>
-                            <p>tel. 604 540 510</p>
+                            <a href="tel: +48604540510"><p>tel. 604 540 510</p></a>
                         </div>
                         <div class="page-footer-2-nav-menu">
                             <ul>
                                 <li><router-link to="/">Strona główna</router-link></li>
                                 <li><router-link to="okulista">Okulista</router-link></li>
                                 <li><router-link to="diabetolog">Diabetolog</router-link></li>
+                                <li><router-link to="cennik">Cennik</router-link></li>
                                 <li><router-link to="kontakt">Kontakt</router-link></li>
                             </ul>
                         </div>
@@ -101,6 +102,10 @@ export default {
     color: #C7BA9F;
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+.page-footer-2-nav-contact a{
+    text-decoration: none;
 }
 
 .page-footer-2-nav-menu li{

@@ -4,13 +4,14 @@
             <router-link to="/"><img class="logo" width= "160" height= "94" alt="logo MMKowalczyk" src="~@/assets/logo.webp"></router-link>
             <div class="header-right">
                 <div class="page-contact">
-                    <p><font-awesome-icon icon="phone-volume" pull="left" :transform="{ rotate: -35 }"/>Rejestracja telefoniczna <span>604 540 510</span></p>
+                    <p><font-awesome-icon icon="phone-volume" pull="left" :transform="{ rotate: -35 }"/>Rejestracja telefoniczna <a href="tel: +48604540510"><span>604 540 510</span></a></p>
                 </div>
                 <nav class="page-nav">
                     <ul class ="page-nav-list">
                         <li><router-link to="/">STRONA GŁÓWNA</router-link></li>
                         <li><router-link to="okulista">OKULISTA</router-link></li>
                         <li><router-link to="diabetolog">DIABETOLOG</router-link></li>
+                        <li><router-link to="cennik">CENNIK</router-link></li>
                         <li><router-link to="kontakt">KONTAKT</router-link></li>
                     </ul>
                 </nav>
@@ -21,6 +22,7 @@
                             <li><router-link to="/">STRONA GŁÓWNA</router-link></li>
                             <li><router-link to="okulista">OKULISTA</router-link></li>
                             <li><router-link to="diabetolog">DIABETOLOG</router-link></li>
+                            <li><router-link to="cennik">CENNIK</router-link></li>
                             <li><router-link to="kontakt">KONTAKT</router-link></li>
                         </ul>
                     </div>
@@ -88,6 +90,11 @@ body {
 .page-contact span{
     color: #e4bc9b;
     margin-left: 10px;
+    text-decoration: none;
+}
+
+.page-contact a{
+    text-decoration: none;
 }
 
 .phone-nav{
@@ -122,7 +129,7 @@ body {
     color: #e4bc9b;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 606px){
 body{
     overflow-x: hidden;
 }
@@ -158,7 +165,7 @@ body{
     display: flex;
     box-sizing: border-box;
     position: absolute;
-    height: 200px;
+    height: 245px;
     width: 190px;
     top: 57px;
     right: -200px;
@@ -220,9 +227,9 @@ border: 2px solid #e4bc9b;
 }
 
 
-@media screen and (min-width: 601px) and (max-width: 686px){
+@media screen and (min-width: 607px) and (max-width: 677px){
     .container{
-        width: 100%;
+        width: 98%;
     }
     .logo{
         width: 150px;
@@ -233,14 +240,34 @@ border: 2px solid #e4bc9b;
     }
     .page-nav-list li{
         list-style-type: none;
-        margin-left: 15px;
+        margin-left: 12px;
+    }
+    .page-nav-list a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 678px) and (max-width: 731px){
+    .container{
+        width: 96%;
+    }
+    .logo{
+        width: 150px;
+        height: 88px;
+    }
+    .page-contact{
+        font-size: 12px;
+    }
+    .page-nav-list li{
+        list-style-type: none;
+        margin-left: 12px;
     }
     .page-nav-list a{
         font-size: 12px;
     }
 }
 
-@media screen and (min-width: 687px) and (max-width: 769px){
+@media screen and (min-width: 732px) and (max-width: 769px){
     .container{
         width: 90%;
     }
@@ -253,7 +280,7 @@ border: 2px solid #e4bc9b;
     }
     .page-nav-list li{
         list-style-type: none;
-        margin-left: 20px;
+        margin-left: 14px;
     }
     .page-nav-list a{
         font-size: 12px;
@@ -264,11 +291,38 @@ border: 2px solid #e4bc9b;
     .container{
         width: 90%;
     }
+    .page-nav-list li{
+        list-style-type: none;
+        margin-left: 16px;
+    }
+    .page-nav-list a{
+        font-size: 12px;
+    }
 }
 
-@media screen and (min-width: 800px) and (max-width: 850px){
+@media screen and (min-width: 801px) and (max-width: 850px){
     .container{
-        width: 85%;
+        width: 90%;
+    }
+    .page-nav-list li{
+        list-style-type: none;
+        margin-left: 14px;
+    }
+    .page-nav-list a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 817px) and (max-width: 925px){
+    .container{
+        width: 90%;
+    }
+    .page-nav-list li{
+        list-style-type: none;
+        margin-left: 16px;
+    }
+    .page-nav-list a{
+        font-size: 14px;
     }
 }
 

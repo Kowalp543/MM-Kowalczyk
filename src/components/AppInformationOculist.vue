@@ -20,7 +20,7 @@
                         <div class="page-information-O-label-info-2">
                             <div class="page-information-O-label-info">
                                 <div class="phone-2"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>REJESTRACJA</div>
-                                <p>tel. 604 540 510</p>
+                                <a href="tel: +48604540510"><p>tel. 604 540 510</p></a>
                             </div>
                             <div class="page-information-O-label-border-between-2"></div>
                             <div class="page-information-O-label-info">
@@ -28,6 +28,7 @@
                                 <p>Wt: 14:00-16:00</p>
                                 <p>Czw: 8:00-12:00</p>
                                 <p>Pt: 15:00-19:00</p>
+                                <p>Pozostałe dni,<br>w tym soboty<br>po telefonicznym<br>uzgodnieniu wizyty</p>
                             </div>
                         </div>
                     </div>
@@ -99,10 +100,13 @@
                         </li>
                     </ul>
                 </div>
+                <div>
+                    <img class="page-information-O-photo" alt="Małgorzata Kowalczyk" src="~@/assets/O2.webp" >
+                </div>
             </div>
-            <div class="page-information-O-registration">
+            <!-- <div class="page-information-O-registration">
                 <button class="btn-mydr-pp" data-doctor="" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbGl0eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY"></button>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -172,7 +176,7 @@ export default {
 }
 
 .page-information-O-label{
-    height: 145px;
+    height: 225px;
     width: 100%;
     background-color: #e4bc9b;
     margin-top: 36px;
@@ -201,6 +205,11 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     color: #fff;
+    text-align: start;
+}
+
+.page-information-O-label-info a{
+    text-decoration: none;
 }
 
 .info-2{
@@ -222,6 +231,7 @@ export default {
     font-weight: 400;
     margin-top: 4px;
     margin-bottom: 0px;
+    color: #fff;
 }
 
 .phone-2{
@@ -270,7 +280,7 @@ export default {
 .page-information-O-box{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 }
 
 .page-information-O-info{
@@ -281,9 +291,14 @@ export default {
 }
 
 .page-information-O-photo{
-    height: 250px;
-    margin-left: 70px;
-    margin-top: 50px;
+    height: 243px;
+    margin-left: 64px;
+    margin-top: 87px;
+    border: 2px solid #C7BA9F;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 5px 18px -9px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 18px -9px rgba(0,0,0,1);
+    box-shadow: 0px 5px 18px -9px rgba(0,0,0,1);
 }
 
 .page-information-O-info h2{
@@ -356,7 +371,7 @@ export default {
         height: 6px;
     }
     .page-information-O-label{
-        height: 345px;
+        height: 395px;
         width: 90%;
     }
     .page-information-O-label-content{
@@ -370,13 +385,13 @@ export default {
         text-align: center;
     }
     .page-information-O-label-border-between-2{
-        border-top: 3px dashed #fff;
+        border-right: 3px dashed #fff;
         margin-top: 25px;
         margin-right: 79px;
         margin-left: 79px;
     }
     .page-information-O-label-info{
-        align-items: center;
+        align-items: start;
     }
     .info-2 span{
         font-size: 16px;
@@ -490,7 +505,7 @@ export default {
         height: 8px;
     }
     .page-information-O-label{
-        height: 240px;
+        height: 305px;
         width: 90%;
         position: relative;
         z-index: -1;
@@ -513,7 +528,7 @@ export default {
         margin-left: 30px;
     }
     .page-information-O-label-info{
-        align-items: center;
+        align-items: start;
     }
     .info-2 span{
         font-size: 18px;
@@ -595,7 +610,7 @@ export default {
         height: 8px;
     }
     .page-information-O-label{
-        height: 260px;
+        height: 335px;
         width: 80%;
     }
     .page-information-O-label-content{
@@ -616,7 +631,7 @@ export default {
         margin-left: 30px;
     }
     .page-information-O-label-info{
-        align-items: center;
+        align-items: start;
     }
     .info-2 span{
         font-size: 22px;

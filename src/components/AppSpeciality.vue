@@ -40,9 +40,9 @@
                 </div>
             </div>
 
-            <div class="page-speciality-registration">
+            <!-- <div class="page-speciality-registration">
                 <button class="btn-mydr-pp" data-doctor="" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbGl0eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY"></button>
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -98,6 +98,7 @@ export default {
     font-size: 34px;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-bottom: 16px;
 }
 
 .page-specialty-border{

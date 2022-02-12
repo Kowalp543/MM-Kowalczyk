@@ -25,13 +25,13 @@
                         <div class="page-information-D-label-info-2">
                             <div class="page-information-D-label-info">
                                 <div class="phone-3"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>REJESTRACJA</div>
-                                <p>tel. 604 421 820</p>
+                                <a href="tel: +48604540510"><p>tel. 604 421 820</p></a>
                             </div>
                             <div class="page-information-D-label-border-between-2"></div>
                             <div class="page-information-D-label-info">
                                 <div class="timetable-2"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
                                 <p>Czw: 16:00-20:00</p>
-                                <p>Sob: telefoniczne <br>uzgdnienie wizyty</p>
+                                <p>Pozostałe dni,<br>w tym soboty<br>po telefonicznym<br>uzgodnieniu wizyty</p>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
             <div class="page-information-D-box">
                 <div class="page-information-D-info">
                     <h2>CZŁONKOSTWO</h2>
-                    <p>Wieloletni członek Polskiego Towarzystwa Diabetologicznego<br></p>
+                    <p>Wieloletni członek Polskiego Towarzystwa Diabetologicznego<br>Członek Polskiego Towarzystwa Leczenia Otyłości<br></p>
                     <h2>ZAKRES DZIAŁALNOŚCI</h2>
                     <p>W dziedzinie diabetologii  zajmuje się całokształtem problematyki <br>
                     cukrzycy typu 1 w tym terapią osobistą pompą insulinową a także <br>
@@ -58,9 +58,9 @@
                     <img class="page-information-D-photo" alt="Mariusz Kowalczyk" src="~@/assets/D2.webp" >
                 </div>
             </div>
-            <div class="page-information-D-registration">
+            <!-- <div class="page-information-D-registration">
                 <button class="btn-mydr-pp" data-doctor="" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbGl0eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY"></button>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -169,6 +169,10 @@ export default {
     text-align: start;
 }
 
+.page-information-D-label-info a{
+    text-decoration: none;
+}
+
 .info-3{
     margin-bottom: 4px;
 }
@@ -188,6 +192,7 @@ export default {
     font-weight: 400;
     margin-top: 4px;
     margin-bottom: 0px;
+    color: #fff;
 }
 
 .phone-3{
@@ -235,7 +240,7 @@ export default {
 .page-information-D-box{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 }
 
 .page-information-D-info{
@@ -247,8 +252,8 @@ export default {
 
 .page-information-D-photo{
     height: 243px;
-    margin-left: 15px;
-    margin-top: 0px;
+    margin-left: 64px;
+    margin-top: 87px;
     border: 2px solid #C7BA9F;
     border-radius: 3px;
     -webkit-box-shadow: 0px 5px 18px -9px rgba(0,0,0,1);
@@ -313,7 +318,7 @@ export default {
         height: 6px;
     }
     .page-information-D-label{
-        height: 430px;
+        height: 450px;
         width: 90%;
     }
     .page-information-D-label-content{
@@ -333,7 +338,7 @@ export default {
         margin-left: 79px;
     }
     .page-information-D-label-info{
-        align-items: center;
+        align-items: start;
     }
     .info-3 span{
         font-size: 18px;
@@ -401,7 +406,7 @@ export default {
         font-size: 11px;
     }
     .page-information-D-label{
-        height: 405px;
+        height: 435px;
     }
     .page-information-D-info h2{
         font-size: 14px;
@@ -441,7 +446,7 @@ export default {
         height: 6px;
     }
     .page-information-D-label{
-        height: 460px;
+        height: 490px;
         width: 90%;
     }
     .page-information-D-label-content{
@@ -461,7 +466,7 @@ export default {
         margin-left: 79px;
     }
     .page-information-D-label-info{
-        align-items: center;
+        align-items: start;
     }
     .info-3 span{
         font-size: 20px;
@@ -540,7 +545,7 @@ export default {
         height: 8px;
     }
     .page-information-D-label{
-        height: 335px;
+        height: 365px;
         width: 90%;
     }
     .page-information-D-label-content{
@@ -561,7 +566,7 @@ export default {
         margin-left: 20px;
     }
     .page-information-D-label-info{
-        align-items: center;
+        align-items: start;
     }
     .info-3 span{
         font-size: 20px;
@@ -642,7 +647,7 @@ export default {
         height: 8px;
     }
     .page-information-D-label{
-        height: 370px;
+        height: 400px;
         width: 80%;
     }
     .page-information-D-label-content{
@@ -663,7 +668,7 @@ export default {
         margin-left: 30px;
     }
     .page-information-D-label-info{
-        align-items: center;
+        align-items: start;
     }
     .info-3 span{
         font-size: 22px;

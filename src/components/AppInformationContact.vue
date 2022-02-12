@@ -23,13 +23,22 @@
                     <div class="label-element">
                         <div class="phone-4"><font-awesome-icon icon="phone" :transform="{ rotate: 100 }"/></div>
                         <h2>KONTAKT</h2>
-                        <p>tel. 604 540 510</p>
+                        <!-- <p>tel. 604 540 510</p> -->
+                        <a href="tel: +48604540510">tel. 604 540 510</a>
                         <!-- <p>mmkowalczyk25@gmail.com</p> -->
                     </div>
                 </div>
             </div>
-            <div class="page-information-C-registration">
+            <!-- <div class="page-information-C-registration">
                 <button class="btn-mydr-pp" data-doctor="" data-speciality="" data-visitkind="" data-evisit="false" data-appname="drw" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYWNpbGl0eV9pZCI6MTc5MTh9.xKOWbPssUgM2WIxVj-NSSbQ_uRKwm9WJwPmFhXLx9rY"></button>
+            </div> -->
+            <div class="page-information-C-Tips">
+                <div class="page-information-C-Tips-header">
+                    <h2>Jak do nas trafić?</h2>
+                </div>
+                <p>Gabinet zlokalizowany jest w centrum miasta, w budynku Active Residence przy ulicy Stanisława Leszczyńskiego 25,
+                na przeciwko sklepu Stokrotka. Przed budynkiem znajduje się parking miejski (Strefa B). Pod sam budynek można też dojechać autobusem linii: 12, 44, 74.
+                W pobliżu gabinetu (300m) położony jest Ogród Saski.</p>
             </div>
             <div class="mapbox">
                 <MglMap :mapboxGl="mapbox-gl" :accessToken="accessToken" :mapStyle.sync="mapStyle" @load="onMapLoaded"/>
@@ -166,12 +175,34 @@
     font-size: 25px;
 }
 
-.page-information-C-registration{
+.label-element a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.page-information-C-Tips{
+    margin-bottom: 36px;
+}
+
+.page-information-C-Tips-header h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page-information-C-Tips p{
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+/* .page-information-C-registration{
     align-items: center;
     text-align: center;
     width: 100%;
     margin-bottom: 80px;
-}
+} */
 
 
 @media screen and (max-width: 480px){
@@ -194,6 +225,12 @@
     }
     .page-information-map{
         display: none;
+    }
+    .page-information-C-Tips-header h2{
+    font-size: 18px;
+    }
+    .page-information-C-Tips p{
+        font-size: 12px;
     }
 }
 
