@@ -17,8 +17,8 @@
                     <div class="label-element">
                         <div class="clock-2"><font-awesome-icon :icon="['far', 'clock']" /></div>
                         <h2>GODZINY PRACY</h2>
-                        <p>Podane na podstronie</p>
-                        <p>wybranego lekarza</p>
+                        <p>Sprawdź wybranego</p>
+                        <p>lekarza</p>
                     </div>
                     <div class="label-element">
                         <div class="phone-4"><font-awesome-icon icon="phone" :transform="{ rotate: 100 }"/></div>

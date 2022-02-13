@@ -393,6 +393,11 @@ export default {
     .page-information-D-info li{
         font-size: 12px;
     }
+
+    .page-information-D-photo{
+        height: 180px;
+    }
+
 }
 
 @media screen and (max-width: 360px){

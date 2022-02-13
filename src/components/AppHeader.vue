@@ -165,8 +165,8 @@ body{
     display: flex;
     box-sizing: border-box;
     position: absolute;
-    height: 245px;
-    width: 190px;
+    height: 175px;
+    width: 151px;
     top: 57px;
     right: -200px;
     padding: 0;
@@ -181,40 +181,41 @@ body{
 }
 
 .phone-nav-menu ul {
-  position: absolute;
-  display: flex;
-  height: calc(100% - 20px);
-  flex-wrap: wrap;
-  margin: 0 10px;
-  padding: 0;
-  list-style-type: none;
-  align-content: flex-start
+    position: absolute;
+    display: flex;
+    height: calc(100% - 20px);
+    flex-wrap: wrap;
+    margin: 0 10px;
+    padding: 0;
+    list-style-type: none;
+    align-content: flex-start
 }
 
 .phone-nav-menu ul li {
-  display: flex;
-  list-style-type: none;
-  height: 30px;
-  background: #ffffff;
-  flex-basis: 100%;
-  margin-top: 15px;
-  color: #000;
-  border-radius: 5px;
-  overflow: hidden;
-text-decoration: none;
-border: 2px solid #e4bc9b;
+    display: flex;
+    list-style-type: none;
+    height: 20px;
+    background: #ffffff;
+    flex-basis: 100%;
+    margin-top: 12px;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    border: 2px solid #e4bc9b;
 }
 
 .phone-nav-menu ul li a{
-  display: flex;
-  padding: 10px;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  color: #000;
-  text-decoration: none;
-  box-sizing: border-box;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 12px;
 }
 
 .phone-nav-menu ul li a:hover{

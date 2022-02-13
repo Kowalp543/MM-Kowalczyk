@@ -2,7 +2,7 @@
     <div class="page-banner">
         <div class="container-banner">
             <div class="slider-banner">
-                <div>
+                <div class="slider">
                     <transition-group name="fade" tag="div">
                     <div v-for="index in [currentIndex]" :key="index">
                         <img class="photo" alt="slider zdjęć ukazujący gabinet" :src="currentImg" />
@@ -15,12 +15,13 @@
                     <div class="label-content-baner">
                         <div class="label-info">
                             <div class="phone"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>KONTAKT</div>
-                            <a href="tel: +48604540510"><p>604 540 510</p></a>                        </div>
+                            <a href="tel: +48604540510"><p>tel. 604 540 510</p></a>
+                        </div>
                         <div class="label-banner-border-between"></div>
                         <div class="label-info">
                             <div class="clock"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
-                            <p>Podane na podstronie</p>
-                            <p>wybranego lekarza</p>
+                            <p>Sprawdź wybranego</p>
+                            <p>lekarza</p>
                         </div>
                         <div class="label-banner-border-between"></div>
                         <div class="label-info">
@@ -229,6 +230,8 @@ body {
     margin-bottom: 2px;
     margin-top: 2px;
     color: #000000;
+    position: relative;
+    z-index: +1;
 }
 
 
@@ -274,6 +277,7 @@ body {
     position: absolute;
     top: 90%;
     left: 0;
+    z-index: 100;
   }
   .label-info{
     margin-top: 15px;
@@ -285,6 +289,7 @@ body {
   .label-info p{
     font-size: 8px;
   }
+
   .phone{
       font-size: 10px;
       position: relative;

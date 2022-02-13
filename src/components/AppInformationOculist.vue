@@ -280,7 +280,7 @@ export default {
 .page-information-O-box{
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .page-information-O-info{
@@ -454,10 +454,9 @@ export default {
     }
 
     .page-information-O-photo{
-        height: 150px;
-        margin-left: 0px;
-        margin-top: 50px;
+        height: 200px;
     }
+
 }
 
 @media screen and (max-width: 383px){

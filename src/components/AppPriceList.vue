@@ -6,6 +6,12 @@
             </div>
             <div class="page-priceList-border"></div>
             <div class="page-priceList-boxList">
+                <div class="doctor-box">
+                    <div class="doctor">
+                        <p>OKULISTA</p>
+                    </div>
+                    <div class="doctor-border"></div>
+                </div>
                 <div class="priceList-box">
                     <div class="priceList-name">
                         <p>Konsultacja okulistyczna u dzieci i dorosłych.</p>
@@ -33,6 +39,12 @@
                     </div>
                 </div>
                 <div class="priceList-border"></div>
+                 <div class="doctor-box-2">
+                    <div class="doctor">
+                        <p>DIABETOLOG</p>
+                    </div>
+                    <div class="doctor-border"></div>
+                </div>
                 <div class="priceList-box">
                     <div class="priceList-name">
                         <p>Konsultacja internistyczna, diabetologiczna, endokrynologiczna.</p>
@@ -98,6 +110,36 @@ export default {
     margin-top: 10px;
 }
 
+.doctor-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.doctor-box-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 18px;
+}
+
+.doctor p{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.doctor-border{
+    height: 5px;
+    width: 64px;
+    background-color: #e4bc9b;
+    margin-top: 4px;
+}
+
 .priceList-border{
     height: 2px;
     width: 100%;
@@ -138,6 +180,15 @@ export default {
         font-size: 30px;
     }
 
+    .doctor p{
+        font-size: 18px;
+    }
+
+    .doctor-border{
+        height: 4px;
+
+    }
+
     .priceList-name p{
         font-size: 12px;
     }
@@ -151,6 +202,10 @@ export default {
 @media screen and (min-width: 481px) and (max-width: 701px){
     .page-priceList-header p{
         font-size: 32px;
+    }
+
+    .doctor p{
+        font-size: 20px;
     }
 
     .priceList-name p{
