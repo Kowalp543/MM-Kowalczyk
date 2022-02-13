@@ -10,7 +10,7 @@ module.exports = {
       config.plugin('prerender').use(PrerenderSPAPlugin, [
         {
           staticDir: path.join(__dirname, 'dist'),
-          routes: ['/', '/okulist', '/diabetolog', '/kontakt'],
+          routes: ['/', '/okulist', '/diabetolog', '/cennik', '/kontakt'],
         },
       ])
     }
