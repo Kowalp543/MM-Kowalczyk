@@ -291,7 +291,7 @@ export default {
 }
 
 .page-information-O-photo{
-    height: 243px;
+    height: 320px;
     margin-left: 64px;
     margin-top: 87px;
     border: 2px solid #C7BA9F;
@@ -455,6 +455,8 @@ export default {
 
     .page-information-O-photo{
         height: 200px;
+        margin-left: 0;
+        margin-top: 44px;
     }
 
 }
@@ -694,16 +696,19 @@ export default {
     }
 }
 
+@media screen and (min-width: 400px) and (max-width: 1100px){
+    .page-information-O-photo{
+        height: 280px;
+        margin-left: 0;
+        margin-top: 44px;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 1100px){
     .page-information-O-box{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .page-information-O-photo{
-        height: 250px;
-        margin-left: 0px;
-        margin-top: 50px;
     }
 }
 
