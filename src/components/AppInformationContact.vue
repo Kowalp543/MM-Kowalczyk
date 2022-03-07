@@ -98,7 +98,7 @@
 }
 
 .container-information-C{
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
 }
 

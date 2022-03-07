@@ -43,6 +43,7 @@ export default {
   data() {
     return {
       images: [
+          // require("@/assets/S0.webp"),
           require("@/assets/S1.webp"),
           require("@/assets/S2.webp"),
           require("@/assets/S3.webp"),

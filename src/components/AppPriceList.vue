@@ -81,7 +81,7 @@ export default {
 }
 
 .container-priceList{
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
 }
 

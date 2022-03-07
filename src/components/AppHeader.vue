@@ -4,7 +4,7 @@
             <router-link to="/"><img class="logo" width= "160" height= "94" alt="logo MMKowalczyk" src="~@/assets/logo.webp"></router-link>
             <div class="header-right">
                 <div class="page-contact">
-                    <p><font-awesome-icon icon="phone-volume" pull="left" :transform="{ rotate: -35 }"/>Rejestracja telefoniczna <a href="tel: +48604540510"><span>604 540 510</span></a></p>
+                    <p><font-awesome-icon icon="phone-volume" pull="left" :transform="{ rotate: -35 }"/>Rejestracja telefoniczna <a href="tel: +48604540510"><span>+48 604 540 510</span></a></p>
                 </div>
                 <nav class="page-nav">
                     <ul class ="page-nav-list">
@@ -51,7 +51,7 @@ body {
 }
 
 .container{
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
 }
 
