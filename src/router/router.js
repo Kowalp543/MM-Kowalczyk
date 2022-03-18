@@ -33,9 +33,9 @@ const RouterVue = new Router({
       component: () => import(/* webpackChunkName: "contact" */'@/views/ContactView')
     }
   ],
-  // scrollBehavior (to, from, savedPosition){
-  //       return { x: 0, y: 0 }
-  // },
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
 
 export default RouterVue;
