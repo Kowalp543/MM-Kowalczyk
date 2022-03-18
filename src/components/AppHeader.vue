@@ -129,7 +129,7 @@ body {
     color: #e4bc9b;
 }
 
-@media screen and (max-width: 606px){
+@media screen and (max-width: 600px){
 body{
     overflow-x: hidden;
 }
@@ -228,7 +228,7 @@ body{
 }
 
 
-@media screen and (min-width: 607px) and (max-width: 677px){
+@media screen and (min-width: 601px) and (max-width: 677px){
     .container{
         width: 98%;
     }

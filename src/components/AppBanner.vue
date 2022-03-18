@@ -98,7 +98,7 @@ body {
 
 .slider-banner{
     width: 100%;
-    height: 50vw;
+    height: 47vw;
     position: relative;
 }
 
@@ -410,6 +410,7 @@ body {
     position: absolute;
     top: 88%;
     left: 0;
+    z-index: 0;
   }
   .label-content-baner{
     margin-left: 15px;
@@ -558,6 +559,45 @@ body {
   }
   .label-banner-border{
     width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1800px){
+  .container-banner{
+    width: 80%;
+  }
+  .label-banner{
+    width: 75%;
+    height: 160px;
+    position: absolute;
+    top: 82%;
+    left: 0;
+  }
+  .label-banner-border{
+    width: 100%;
+  }
+  .slider-banner{
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 1801px){
+  .container-banner{
+    width: 80%;
+  }
+  .label-banner{
+    width: 75%;
+    height: 160px;
+    position: absolute;
+    top: 82%;
+    left: 0;
+  }
+  .label-banner-border{
+    width: 100%;
+  }
+  .slider-banner{
+    height: 42vw;
   }
 }
  /* @media screen and (min-width: 900px) and (max-width: 1100px){

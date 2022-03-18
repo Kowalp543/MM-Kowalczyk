@@ -62,7 +62,7 @@ export default {
 }
 
 .page-about-content {
-    width: 65vw;
+    width: 50vw;
 }
 
 .page-about-content p{
@@ -243,11 +243,21 @@ export default {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1100px){
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .page-about-content{
+        width: 65vw;
+    }
     .page-about-button{
         width: 70%;
         margin-top: 40px;
     }
+}
+
+@media screen and (min-width: 1700px){
+    .page-about-content{
+        width: 45vw;
+    }
+
 }
 
 </style>
