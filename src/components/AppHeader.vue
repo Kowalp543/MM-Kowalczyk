@@ -15,7 +15,7 @@
                         <li><router-link to="kontakt">KONTAKT</router-link></li>
                     </ul>
                 </nav>
-                <nav class="phone-nav">
+                <!-- <nav class="phone-nav">
                     <button class="phone-nav-button">Menu</button>
                     <div class="phone-nav-menu">
                         <ul>
@@ -26,16 +26,26 @@
                             <li><router-link to="kontakt">KONTAKT</router-link></li>
                         </ul>
                     </div>
-                </nav>
+                </nav> -->
+                <Push :right=true :closeOnNavigation="true" class="push" :width="200"  :crossIcon="false" noOverlay>
+                    <span><router-link to="/">STRONA GŁÓWNA</router-link></span>
+                    <span><router-link to="okulista">OKULISTA</router-link></span>
+                    <span><router-link to="diabetolog">DIABETOLOG</router-link></span>
+                    <span><router-link to="cennik">CENNIK</router-link></span>
+                    <span><router-link to="kontakt">KONTAKT</router-link></span>
+                </Push>
             </div>
         </div>
     </header>
 </template>
 
 <script>
-    export default
-    {
+    import { Push } from 'vue-burger-menu'
 
+    export default {
+        components: {
+            Push
+        }
     }
 
 </script>
@@ -97,7 +107,11 @@ body {
     text-decoration: none;
 }
 
-.phone-nav{
+/* .phone-nav{
+    display: none;
+} */
+
+.push {
     display: none;
 }
 
@@ -142,7 +156,7 @@ body{
 .page-contact{
     display: none;
 }
-.phone-nav {
+/* .phone-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -225,6 +239,68 @@ body{
 .phone-nav-button:focus ~ .phone-nav-menu, .phone-nav-menu:hover {
   transform: translateX(-200px);
 }
+} */
+
+.push{
+    display: flex;
+}
+
+ .bm-burger-button {
+      top: 31px;
+      cursor: pointer;
+      height: 22px;
+      width: 30px;
+    }
+    .bm-burger-bars {
+        background-color: #e4bc9b;
+        border-radius: 30px;
+    }
+    .line-style {
+      position: absolute;
+      height: 20%;
+      left: 0;
+      right: 0;
+    }
+    /* .cross-style {
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .bm-cross {
+      background: #000;
+    }
+    .bm-cross-button {
+      height: 24px;
+      width: 24px;
+    } */
+    .bm-menu {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1000; /* Stay on top */
+      top: 0;
+      left: 0;
+      background-color: #FAF8F6; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
+    }
+
+    .bm-overlay {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .bm-item-list span{
+      margin-right: 20px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .bm-item-list a {
+      display: flex;
+      text-decoration: none;
+      color: #C7BA9F;
+      letter-spacing: 1px;
+    }
 }
 
 

@@ -210,7 +210,7 @@
         overflow-x: hidden;
     }
     .page-information-C-header p{
-        font-size: 25px;
+        font-size: 26px;
     }
     .page-information-C-border{
         height: 6px;

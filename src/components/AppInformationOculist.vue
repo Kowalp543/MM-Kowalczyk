@@ -365,7 +365,7 @@ export default {
         width: 90%;
     }
     .page-information-O-header p{
-        font-size: 30px;
+        font-size: 26px;
     }
     .page-information-O-border{
         height: 6px;

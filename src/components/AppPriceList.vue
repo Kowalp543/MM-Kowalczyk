@@ -176,8 +176,12 @@ export default {
         overflow-x: hidden;
     }
 
+    .page-priceList-border{
+        height: 6px;
+    }
+
     .page-priceList-header p{
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .doctor p{

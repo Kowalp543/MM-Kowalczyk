@@ -312,7 +312,7 @@ export default {
         width: 90%;
     }
     .page-information-D-header p{
-        font-size: 30px;
+        font-size: 26px;
     }
     .page-information-D-border{
         height: 6px;
