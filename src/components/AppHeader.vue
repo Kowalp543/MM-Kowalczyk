@@ -199,6 +199,7 @@ body {
         margin-right: 20px;
         font-size: 14px;
         font-weight: 700;
+        white-space: nowrap;
     }
     .bm-item-list a {
         display: flex;
