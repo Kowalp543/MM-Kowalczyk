@@ -144,162 +144,67 @@ body {
 }
 
 @media screen and (max-width: 600px){
-body{
-    overflow-x: hidden;
-}
-.container{
-    width: 100%;
-}
-.page-nav{
-    display: none;
-}
-.page-contact{
-    display: none;
-}
-/* .phone-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px;
-  box-sizing: border-box;
-  height: 20px;
-}
-
-.phone-nav-button {
-    border-radius: 5px;
-    border: 2px solid #e4bc9b;
-    color: #000;
-    background: #FAF8F6;
-    -webkit-box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
-    box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
-}
-
-.phone-nav-menu {
-    display: flex;
-    box-sizing: border-box;
-    position: absolute;
-    height: 175px;
-    width: 151px;
-    top: 57px;
-    right: -200px;
-    padding: 0;
-    background: #FAF8F6;
-    transition: 0.5s transform ease-in-out;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
-    box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
-    border: 2px solid #C7BA9F;
-    z-index: 100;
-}
-
-.phone-nav-menu ul {
-    position: absolute;
-    display: flex;
-    height: calc(100% - 20px);
-    flex-wrap: wrap;
-    margin: 0 10px;
-    padding: 0;
-    list-style-type: none;
-    align-content: flex-start
-}
-
-.phone-nav-menu ul li {
-    display: flex;
-    list-style-type: none;
-    height: 20px;
-    background: #ffffff;
-    flex-basis: 100%;
-    margin-top: 12px;
-    color: #000;
-    border-radius: 5px;
-    overflow: hidden;
-    text-decoration: none;
-    border: 2px solid #e4bc9b;
-}
-
-.phone-nav-menu ul li a{
-    display: flex;
-    padding: 5px;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    color: #000;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-size: 12px;
-}
-
-.phone-nav-menu ul li a:hover{
-    color: #A0917A;
-}
-
-.phone-nav-button:focus ~ .phone-nav-menu, .phone-nav-menu:hover {
-  transform: translateX(-200px);
-}
-} */
-
-.push{
-    display: inline;
-}
-
-.bm-burger-button {
-    top: 31px;
-    cursor: pointer;
-    height: 22px;
-    width: 30px;
-}
-.bm-burger-bars {
-    background-color: #e4bc9b;
-    border-radius: 30px;
-}
-.line-style {
-    position: absolute;
-    height: 20%;
-    left: 0;
-    right: 0;
-}
-    /* .cross-style {
-      position: absolute;
-      top: 12px;
-      right: 10px;
-      cursor: pointer;
+    body{
+        overflow-x: hidden;
     }
-    .bm-cross {
-      background: #000;
+    .container{
+        width: 100%;
     }
-    .bm-cross-button {
-      height: 24px;
-      width: 24px;
-    } */
+    .page-nav{
+        display: none;
+    }
+    .page-contact{
+        display: none;
+    }
+
+    .push{
+        display: block;
+    }
+
+    .bm-burger-button {
+        top: 28px;
+        width: 32px;
+        height: 22px;
+        left: 36px;
+        cursor: pointer;
+    }
+    .bm-burger-bars {
+        background-color: #e4bc9b;
+        border-radius: 30px;
+    }
+    .line-style {
+        position: absolute;
+        height: 20%;
+        left: 0;
+        right: 0;
+    }
+
     .bm-menu {
-      height: 34%; /* 100% Full-height */
-      width: 0; /* 0 width - change this with JavaScript */
-      position: fixed; /* Stay in place */
-      z-index: 1000; /* Stay on top */
-      top: 0;
-      left: 0;
-      background-color:rgb(63, 63, 65); /* #FAF8F6*/
-      overflow-x: hidden; /* Disable horizontal scroll */
-      padding-top: 60px; /* Place content 60px from the top */
-      transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color:rgb(63, 63, 65); /* #FAF8F6*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
     }
 
     .bm-overlay {
-      background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.3);
     }
     .bm-item-list span{
-      margin-right: 20px;
-      font-size: 14px;
-      font-weight: 700;
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: 700;
     }
     .bm-item-list a {
-      display: flex;
-      text-decoration: none;
-      color: #C7BA9F;
-      letter-spacing: 1px;
+        display: flex;
+        text-decoration: none;
+        color: #C7BA9F;
+        letter-spacing: 1px;
     }
 }
 
@@ -407,6 +312,91 @@ body{
 
 
 
+
+ /* .phone-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 20px;
+}
+
+.phone-nav-button {
+    border-radius: 5px;
+    border: 2px solid #e4bc9b;
+    color: #000;
+    background: #FAF8F6;
+    -webkit-box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
+    box-shadow: 0px 5px 15px -10px rgba(0,0,0,1);
+}
+
+.phone-nav-menu {
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    height: 175px;
+    width: 151px;
+    top: 57px;
+    right: -200px;
+    padding: 0;
+    background: #FAF8F6;
+    transition: 0.5s transform ease-in-out;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
+    box-shadow: 0px 0px 15px -9px rgba(0,0,0,1);
+    border: 2px solid #C7BA9F;
+    z-index: 100;
+}
+
+.phone-nav-menu ul {
+    position: absolute;
+    display: flex;
+    height: calc(100% - 20px);
+    flex-wrap: wrap;
+    margin: 0 10px;
+    padding: 0;
+    list-style-type: none;
+    align-content: flex-start
+}
+
+.phone-nav-menu ul li {
+    display: flex;
+    list-style-type: none;
+    height: 20px;
+    background: #ffffff;
+    flex-basis: 100%;
+    margin-top: 12px;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    border: 2px solid #e4bc9b;
+}
+
+.phone-nav-menu ul li a{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.phone-nav-menu ul li a:hover{
+    color: #A0917A;
+}
+
+.phone-nav-button:focus ~ .phone-nav-menu, .phone-nav-menu:hover {
+  transform: translateX(-200px);
+}
+}  */
 
 
 </style>
