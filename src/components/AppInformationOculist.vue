@@ -20,7 +20,7 @@
                         <div class="page-information-O-label-info-2">
                             <div class="page-information-O-label-info">
                                 <div class="phone-2"><span><font-awesome-icon icon="phone" pull="left" :transform="{ rotate: 100 }"/></span>REJESTRACJA</div>
-                                <a href="tel: +48604540510"><p>tel. 604 540 510</p></a>
+                                <a class="telefon" href="tel: +48604540510"><p>tel. 604 540 510</p></a>
                             </div>
                             <div class="page-information-O-label-border-between-2"></div>
                             <div class="page-information-O-label-info">
@@ -345,7 +345,6 @@ export default {
 }
 
 
-
 @media screen and (max-width: 480px){
     body{
         overflow-x: hidden;
@@ -405,7 +404,7 @@ export default {
     .phone-2{
         font-size: 16px;
         margin-bottom: 10px;
-        position: relative;
+        position: static;
         right: 0px;
     }
     .phone-2 span{
@@ -416,7 +415,7 @@ export default {
     }
     .timetable{
         font-size: 14px;
-        position: relative;
+        position: static;
         right: 0px;
         margin-bottom: 10px;
 
@@ -508,8 +507,6 @@ export default {
     .page-information-O-label{
         height: 305px;
         width: 90%;
-        position: relative;
-        z-index: -1;
     }
     .page-information-O-label-content{
         display: flex;
@@ -554,10 +551,9 @@ export default {
     }
     .timetable{
         font-size: 16px;
-        position: relative;
+        position: static;
         right: 0px;
         margin-bottom: 10px;
-
     }
     .timetable span{
         font-size: 18px;

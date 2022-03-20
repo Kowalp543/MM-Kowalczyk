@@ -240,7 +240,7 @@ export default {
 .page-information-D-box{
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .page-information-D-info{
@@ -352,7 +352,7 @@ export default {
     .phone-3{
         font-size: 14px;
         margin-bottom: 10px;
-        position: relative;
+        position: static;
         right: 0px;
     }
     .phone-3 span{
@@ -363,7 +363,7 @@ export default {
     }
     .timetable-2{
         font-size: 14px;
-        position: relative;
+        position: static;
         right: 0px;
         margin-bottom: 10px;
 
@@ -487,7 +487,7 @@ export default {
     .phone-3{
         font-size: 16px;
         margin-bottom: 10px;
-        position: relative;
+        position: static;
         right: 0px;
     }
     .phone-3 span{
@@ -498,7 +498,7 @@ export default {
     }
     .timetable-2{
         font-size: 16px;
-        position: relative;
+        position: static;
         right: 0px;
         margin-bottom: 10px;
 
@@ -598,7 +598,7 @@ export default {
     }
     .timetable-2{
         font-size: 16px;
-        position: relative;
+        position: static;
         right: 0px;
         margin-bottom: 10px;
 
