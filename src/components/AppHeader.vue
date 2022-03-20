@@ -199,6 +199,7 @@ body {
         margin-right: 20px;
         font-size: 14px;
         font-weight: 700;
+        margin-top: 12px;
         white-space: nowrap;
     }
     .bm-item-list a {
@@ -206,6 +207,9 @@ body {
         text-decoration: none;
         color: #C7BA9F;
         letter-spacing: 1px;
+    }
+    .bm-item-list a:hover {
+        color: #FAF8F6;
     }
 }
 
