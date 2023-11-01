@@ -12,7 +12,7 @@
                     <div class="page-information-O-label-content">
                         <div class="page-information-O-label-info">
                             <div class="info-2"><span>Dr n.med. Małgorzata Kowalczyk</span></div>
-                            <p><span>Specjalista Chorób Oczu</span></p><br>
+                            <p><span>Specjalista Chorób Oczu</span></p>
                             <p>Starszy asystent w Katedrze i Klinice Okulistyki<br>
                             Ogólnej i Dziecięcej w Lublinie</p>
                         </div>
