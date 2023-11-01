@@ -17,25 +17,25 @@
                         <p>Konsultacja okulistyczna u dzieci i dorosłych.</p>
                     </div>
                     <div class="priceList-price">
-                        <p>150 zł</p>
+                        <p>200 zł</p>
                     </div>
                 </div>
-                <div class="priceList-border"></div>
+                <!-- <div class="priceList-border"></div>
                 <div class="priceList-box">
                     <div class="priceList-name">
                         <p>Konsultacja okulistyczna u dzieci (druga) w celu zbadania refrakcji po atropinie lub do doboru okularów.</p>
                     </div>
                     <div class="priceList-price">
-                        <p>100 zł</p>
+                        <p>150 zł</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="priceList-border"></div>
                 <div class="priceList-box">
                     <div class="priceList-name">
-                        <p>Konsultacja okulistyczna w dni wolne i święta.</p>
+                        <p>Konsultacja okulistyczna u dzieci i dorosłych w dni wolne i święta.</p>
                     </div>
                     <div class="priceList-price">
-                        <p>180 zł</p>
+                        <p>230 zł</p>
                     </div>
                 </div>
                 <div class="priceList-border"></div>
@@ -50,16 +50,16 @@
                         <p>Konsultacja internistyczna, diabetologiczna, endokrynologiczna.</p>
                     </div>
                     <div class="priceList-price">
-                        <p>150 zł</p>
+                        <p>200 zł</p>
                     </div>
                 </div>
                 <div class="priceList-border"></div>
                 <div class="priceList-box">
                     <div class="priceList-name">
-                        <p>Konsultacja internistyczna, diabetologiczna, endokrynologiczna - w dni wolne (soboty).</p>
+                        <p>Konsultacja internistyczna, diabetologiczna, endokrynologiczna w dni wolne i święta.</p>
                     </div>
                     <div class="priceList-price">
-                        <p>180 zł</p>
+                        <p>230 zł</p>
                     </div>
                 </div>
                 <div class="priceList-border"></div>

@@ -11,10 +11,10 @@
                 <div class="page-information-O-label">
                     <div class="page-information-O-label-content">
                         <div class="page-information-O-label-info">
-                            <div class="info-2"><span>Lek. med. Małgorzata Kowalczyk</span></div>
-                            <p><span>Specjalista Chorób Oczu</span></p>
-                            <p>Starszy asystent Kliniki Okulistyki<br>
-                            Ogólnej w Lublinie</p>
+                            <div class="info-2"><span>Dr n.med. Małgorzata Kowalczyk</span></div>
+                            <p><span>Specjalista Chorób Oczu</span></p><br>
+                            <p>Starszy asystent w Katedrze i Klinice Okulistyki<br>
+                            Ogólnej i Dziecięcej w Lublinie</p>
                         </div>
                         <div class="page-information-O-label-border-between"></div>
                         <div class="page-information-O-label-info-2">
@@ -45,14 +45,17 @@
                     </ul>
                     <h2>ZAKRES DZIAŁALNOŚCI</h2>
                     <ul>
-                        <li>Diagnostyka i leczenie chorób narządu wzroku wieku dziecięcego z uwzględnieniem tzw. chorób rzadkich.</li>
+                        <li>Diagnostyka i leczenie chorób narządu wzroku wieku dziecięcego z uwzględnieniem chorób rzadkich.</li>
                         <li>Diagnostyka i leczenie niedrożności dróg łzowych u dzieci.</li>
                         <li>Wykrywanie i leczenie wad wzroku u dzieci.
                             <ul>
                                 <li>Leczenie krótkowzroczności za pomocą 0.01% Atropiny.</li>
                             </ul>
                         </li>
-                        <li>Wykrywanie i leczenie skurczu akomodacji.
+                        <li>Wykrywanie i leczenie zaburzeń akomodacji i konwergencji.
+                            <ul>
+                                <li>Diagnostyka i leczenie skurczu akomodacji powodującego pseudokrótkowzroczność.</li>
+                            </ul>
                             <ul>
                                 <li>Obiektywne i subiektywne badanie zaburzeń akomodacji, konwergencji oraz określanie oka dominującego za pomocą linijki RAF.</li>
                             </ul>

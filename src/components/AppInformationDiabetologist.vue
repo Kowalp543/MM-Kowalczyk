@@ -18,8 +18,8 @@
                                 i Chorób Metabolicznych Uniwersytetu<br>
                                 Medycznego w Lublinie, starszy<br>
                                 asystent, Z-ca Lekarza kierującego<br>
-                                Oddziałem Endokrynologii w SPSK 4<br>
-                                w Lublinie</p>
+                                Oddziałem Endokrynologii, Diabetologii<br>
+                                i Chorób Metabolicznych w SPSK 4</p>
                         </div>
                         <div class="page-information-D-label-border-between"></div>
                         <div class="page-information-D-label-info-2">

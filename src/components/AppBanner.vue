@@ -64,7 +64,7 @@ export default {
       this.timer = setInterval(this.next, 5000);
     },
 
-    next: function() {
+    next: function() {                             //clearTimeout()
       this.currentIndex += 1;
     },
     prev: function() {
@@ -174,6 +174,7 @@ body {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+    /* align-items: center; */
 }
 
 .label-info{
