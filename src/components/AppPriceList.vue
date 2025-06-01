@@ -17,7 +17,7 @@
                         <p>Konsultacja okulistyczna u dzieci i dorosłych.</p>
                     </div>
                     <div class="priceList-price">
-                        <p>200 zł</p>
+                        <p>250 zł</p>
                     </div>
                 </div>
                 <!-- <div class="priceList-border"></div>
@@ -35,7 +35,7 @@
                         <p>Konsultacja okulistyczna u dzieci i dorosłych w dni wolne i święta.</p>
                     </div>
                     <div class="priceList-price">
-                        <p>230 zł</p>
+                        <p>250 zł</p>
                     </div>
                 </div>
                 <div class="priceList-border"></div>
