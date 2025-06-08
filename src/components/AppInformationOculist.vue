@@ -25,9 +25,10 @@
                             <div class="page-information-O-label-border-between-2"></div>
                             <div class="page-information-O-label-info">
                                 <div class="timetable"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
-                                <p>Wt: 14:00-16:00</p>
-                                <p>Czw: 8:00-12:00</p>
-                                <p>Pt: 15:00-19:00</p>
+                                <p>Śr: 8:00-13:00</p>
+                                <p>Czw: 8:00-13:00</p>
+                                <p>Pt: 15:00-20:00</p>
+                                <p>Ostatni czwartek<br>miesiąca 15:00-20:00</p>
                                 <p>Pozostałe dni,<br>w tym soboty<br>po telefonicznym<br>uzgodnieniu wizyty</p>
                             </div>
                         </div>
