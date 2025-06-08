@@ -29,7 +29,7 @@
                                 <p>Czw: 8:00-13:00</p>
                                 <p>Pt: 15:00-20:00</p>
                                 <p>Ostatni czwartek<br>miesiąca 15:00-20:00</p>
-                                <p>Pozostałe dni,<br>w tym soboty<br>po telefonicznym<br>uzgodnieniu wizyty</p>
+                                <p>Pozostałe dni, w tym soboty<br>po telefonicznym uzgodnieniu</p>
                             </div>
                         </div>
                     </div>
