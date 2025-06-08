@@ -30,6 +30,7 @@
                             <div class="page-information-D-label-border-between-2"></div>
                             <div class="page-information-D-label-info">
                                 <div class="timetable-2"><span><font-awesome-icon :icon="['far', 'clock']" /></span>GODZINY PRACY</div>
+                                <p>Wt: 16:00-18:00</p>
                                 <p>Czw: 16:00-20:00</p>
                                 <p>Pozostałe dni,<br>w tym soboty<br>po telefonicznym<br>uzgodnieniu wizyty</p>
                             </div>
